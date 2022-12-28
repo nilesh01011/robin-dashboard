@@ -9,7 +9,7 @@ function Navbar({ theme, handleTheme }) {
     return (
         <>
             <nav className={`${isOpen ? 'w-[50px]' : 'w-[240px]'} ${theme === 'dark' ? 'bg-[#242424]' : 'bg-[#F4F4F4]'} px-[14px] pt-[14px] flex flex-col select-none shadow-[0_0_3px_rgba(0,0,0,0.2)] relative`}>
-                <div className='w-full mb-16'>
+                <div className='w-full'>
                     {/* buttons */}
                     <button type='button' className='flex items-center justify-between w-full mb-[14px]' onClick={() => setIsOpen(!isOpen)}>
                         {

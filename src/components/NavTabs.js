@@ -7,7 +7,7 @@ function NavTabs({ isOpen, theme }) {
 
     return (
         <>
-            <div className={`flex flex-col items-center mt-3 mb-10`}>
+            <div className={`flex flex-col items-center mt-3 mb-6`}>
                 {
                     dashboardNavTabs.map((ele) => (
                         <button key={ele.id} type='button' className={`${isOpen ? 'justify-center' : 'justify-between'} flex flex-col w-full mb-[4px] relative`}>
@@ -23,7 +23,7 @@ function NavTabs({ isOpen, theme }) {
                             </div>
                             {/* submenu */}
                             <div className='w-full'>
-                                {ele.setDropdown && submenu && !isOpen &&
+                                {ele.setDropdown && !submenu && !isOpen &&
                                     (
                                         <>
                                             <ul className='w-full'>

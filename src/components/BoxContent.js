@@ -11,7 +11,7 @@ function BoxContent({ title, icons, counterBox, theme }) {
 
     return (
         <>
-            <div className='w-full h-[160px] rounded-lg shadow-[0_0_3px_rgba(0,0,0,0.2)]'>
+            <div className='w-full h-[164px] rounded-lg shadow-[0_0_3px_rgba(0,0,0,0.2)]'>
                 {/* head */}
                 <div className={`h-[25%] ${changeHeadTheme} rounded-t-lg flex items-center justify-between p-[12px]`}>
                     <div className='flex items-center gap-[8px]'>

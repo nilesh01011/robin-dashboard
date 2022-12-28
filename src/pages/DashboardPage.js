@@ -9,7 +9,7 @@ function DashboardPage() {
     const [switchTheme, setSwitchTheme] = useState(false);
 
     if (!getTheme) {
-        localStorage.setItem('theme', 'light')
+        localStorage.setItem('theme', getTheme = 'light')
     }
 
     if (getTheme === 'light') {
