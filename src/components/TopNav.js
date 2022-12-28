@@ -6,7 +6,7 @@ function TopNav({ theme }) {
     const [isOpen, setIsOpen] = useState(false)
     return (
         <>
-            <div className='w-full h-max flex items-baseline justify-end pt-[1rem] mb-[15px]'>
+            <div className='w-full h-max flex items-baseline justify-end pt-[1rem] mb-[8px]'>
                 <div className='flex items-center gap-6'>
                     {/* notificons */}
                     <div className='relative'>

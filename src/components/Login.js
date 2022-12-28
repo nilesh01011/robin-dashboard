@@ -18,59 +18,60 @@ function Login() {
         e.preventDefault();
 
         const fetchData = userdata.map((ele) => {
-            if (!email && !password && !errorCaptcha) {
-                setError(true)
-                setErrorCaptcha(true)
-            }
+            navigate('/dashboard');
+            // if (!email && !password && !errorCaptcha) {
+            //     setError(true)
+            //     setErrorCaptcha(true)
+            // }
 
-            if (ele.username === email && ele.password === password && captchaCode === captcha) {
+            // if (ele.username === email && ele.password === password && captchaCode === captcha) {
 
-                if (captchaCode === captcha) {
-                    navigate('/dashboard');
-                } else {
-                    setErrorCaptcha(true);
-                    setEmail(email)
-                    setPassword(password)
-                }
+            //     if (captchaCode === captcha) {
+            //         navigate('/dashboard');
+            //     } else {
+            //         setErrorCaptcha(true);
+            //         setEmail(email)
+            //         setPassword(password)
+            //     }
 
-            } else {
-                setError(true);
-                setErrorCaptcha(true);
-                console.log(email, password, captcha)
-                setEmail('');
-                setPassword('');
-                setCaptcha('');
-            }
+            // } else {
+            //     setError(true);
+            //     setErrorCaptcha(true);
+            //     console.log(email, password, captcha)
+            //     setEmail('');
+            //     setPassword('');
+            //     setCaptcha('');
+            // }
         })
 
         console.log(fetchData)
     };
 
     return (
-        <div className='h-screen w-full relative overflow-hidden bg-no-repeat bg-cover' style={{ backgroundImage: 'url("./images/mainbg.png")' }}>
+        <div className='h-screen w-full relative overflow-hidden bg-no-repeat bg-cover pt-[20px]' style={{ backgroundImage: 'url("./images/mainbg.png")' }}>
 
+            {/* logo images */}
+            <div className='w-full h-[20px] flex lg:justify-end justify-center lg:pr-[25px]'>
+                <img src='./images/logo.png' className='h-full lg:w-[160px] w-[140px]' alt='logo-images' />
+            </div>
             {/* display contents */}
-            <div className='w-full h-full flex flex-col gap-[10px] z-20 pt-[20px] relative'>
-                {/* logo images */}
-                <div className='h-[20px] lg:ml-auto flex items-center justify-center lg:pr-[25px]'>
-                    <img src='./images/logo.png' className='h-full w-[160px] lg:mx-none mx-auto' alt='logo-images' />
-                </div>
+            <div className='w-full lg:h-full h-max lg:mt-0 mt-10 flex flex-col lg:justify-center gap-[10px] z-20 relative'>
                 {/* main contents */}
 
-                <div className='flex flex-col h-full'>
+                <div className='flex flex-col h-max'>
                     {/* robin logo and content*/}
-                    <div className='flex flex-col items-center justify-center lg:mt-0 mt-8'>
+                    <div className='flex flex-col items-center justify-center'>
                         {/* robin logo */}
                         <div className='flex flex-col items-center justify-center'>
-                            <img src='./images/RobinDark_theme.svg' className='h-[45px] w-[240px]' alt='robin-images' />
-                            <img src='./images/Line.png' className='h-[1px] w-[300px] my-3' alt='line-images' />
+                            <img src='./images/RobinDark_theme.svg' className='h-[55px] w-[245px]' alt='robin-images' />
+                            <img src='./images/Line.png' className='h-[1px] w-[300px] mt-1 mb-3' alt='line-images' />
                         </div>
                         {/* content */}
                         <div>
-                            <h2 className='text-white text-[18px]'>Dealer Management System</h2>
+                            <h2 className='text-white text-[20px]'>Dealer Management System</h2>
                         </div>
                     </div>
-                    <div className='flex flex-col justify-between h-full mt-4'>
+                    <div className='flex flex-col justify-between h-full mt-8'>
                         {/* login content */}
                         <div className='w-full h-full flex items-center justify-center'>
                             <div className='2xl:w-[420px] lg:w-[380px] sm:w-[360px] w-[320px] 2xl:h-[460px] h-max rounded-2xl bg-[rgba(40,39,44,0.8)] sm:py-[15px] py-[10px] px-[28px]'>
@@ -164,7 +165,7 @@ function Login() {
                     </div>
 
                     {/* footer */}
-                    <div className='w-full lg:h-[40px] lg:gap-0 gap-2 sm:py-[15px] py-[10px] flex items-center justify-between lg:flex-row flex-col'>
+                    <div className='w-full lg:h-[40px] lg:gap-0 gap-2 sm:py-[15px] py-[10px] flex items-center justify-between lg:flex-row flex-col fixed bottom-0'>
                         <div className='flex items-center gap-4 divide-x-[1px] divide-[#8E8585]'>
                             <span className='text-[#8E8585] sm:text-[14px] text-[9px] sm:px-[25px] px-[8px]'>TERMS OF USE</span>
                             <span className='text-[#8E8585] sm:text-[14px] text-[9px] sm:px-[25px] px-[8px]'>ABOUT US</span>

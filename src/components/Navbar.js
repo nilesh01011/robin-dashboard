@@ -8,29 +8,29 @@ function Navbar({ theme, handleTheme }) {
 
     return (
         <>
-            <nav className={`${isOpen ? 'w-[50px]' : 'w-[240px]'} ${theme === 'dark' ? 'bg-[#242424]' : 'bg-[#F4F4F4]'} px-[14px] pt-[14px] flex flex-col select-none shadow-[0_0_3px_rgba(0,0,0,0.2)] relative`}>
+            <nav className={`${isOpen ? 'w-[60px]' : 'w-[240px]'} ${theme === 'dark' ? 'bg-[#242424]' : 'bg-[#F4F4F4]'} px-[14px] pt-[14px] flex flex-col justify-between select-none shadow-[0_0_3px_rgba(0,0,0,0.2)] relative overflow-hidden`}>
                 <div className='w-full'>
                     {/* buttons */}
-                    <button type='button' className='flex items-center justify-between w-full mb-[14px]' onClick={() => setIsOpen(!isOpen)}>
+                    <button type='button' className='flex items-center justify-between w-full mb-[10px]' onClick={() => setIsOpen(!isOpen)}>
                         {
                             isOpen ?
                                 (
-                                    <div className='w-[15px] h-[32px] flex items-start transition-all duration-300'>
+                                    <div className='w-[15px] h-[34px] flex items-start transition-all duration-300 relative left-[4px]'>
                                         <img src={`${theme === 'dark' ? './images/B_dark_theme.svg' : './images/B_Light_theme.svg'}`} className='h-full mr-auto' alt='robin-logo' />
                                     </div>
                                 ) : (
-                                    <div className='h-[32px] flex items-start'>
+                                    <div className='h-[34px] flex items-start'>
                                         <img src={`${theme === 'dark' ? './images/RobinDark_theme.svg' : './images/RobinLightTheme.svg'}`} className='h-full mr-auto' alt='robin-logo' />
                                     </div>
                                 )
                         }
-                        <AiOutlineLeft size={16} className={`${isOpen ? `${theme === 'dark' ? 'text-white' : 'text-black'} rotate-180` : 'text-[#FF3E5B]'}`} />
+                        <AiOutlineLeft size={16} className={`${isOpen ? `${theme === 'dark' ? 'text-white' : 'text-black'} rotate-180` : 'text-[#FF3E5B]'}  ${isOpen ? 'relative left-[4px]' : ''}`} />
                     </button>
                     {/* search boxs */}
                     <div className={`w-full ${isOpen ? 'justify-center' : ''} h-[33px] flex items-end`}>
                         {
                             isOpen ? (
-                                <AiOutlineSearch size={22} />
+                                <AiOutlineSearch size={24} />
 
                             ) : (
                                 <input className={`${theme === 'dark' ? 'bg-[#0B0B0C] text-white' : 'bg-white text-black'} w-full h-full text-[14px] placeholder:text-[#8E8585] p-[6px_12px] rounded ${isOpen && 'scale-0'}`} placeholder='Search menu..' style={{ border: `1px solid ${theme === 'dark' ? '#342C2C' : '#DEDEDE'}` }} />
@@ -41,9 +41,9 @@ function Navbar({ theme, handleTheme }) {
                     {/* tabs buttons */}
                     <NavTabs isOpen={isOpen} theme={theme} />
                 </div>
-                <div className='w-full mb-4'>
-                    <button onClick={() => handleTheme()} type='button' className={`w-[28px] h-[28px] rounded-full flex items-center justify-center ${theme === 'dark' ? '' : 'bg-white'} relative -left-[4px]`}>
-                        {/* fixed bottom-14 left-[11px] */}
+                {/* fixed bottom-[3.5rem] */}
+                <div className={`w-max mb-[32px]`}>
+                    <button onClick={() => handleTheme()} type='button' className={`w-[28px] h-[28px] rounded-full flex items-center justify-center ${theme === 'dark' ? 'bg-[#0B0B0C]' : 'bg-white'}`}>
                         {
                             theme === 'dark' ? (
                                 <BsMoon size={14} className="text-[#FF3E5B]" />

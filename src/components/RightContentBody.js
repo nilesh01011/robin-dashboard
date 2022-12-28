@@ -46,7 +46,7 @@ function RightContentBody({ theme }) {
                                 {/* icons */}
                                 <MdAccessTimeFilled size={18} className={`${theme === 'dark' ? 'text-white' : 'text-[#342C2C]'}`} />
                                 {/* text */}
-                                <span className='font-bold text-[14px] select-none'>Action Items</span>
+                                <span className='font-bold text-[16px] select-none'>Action Items</span>
                             </div>
                             {/* icons */}
 
@@ -57,15 +57,15 @@ function RightContentBody({ theme }) {
                             isOpen &&
                             <div className='w-full text-left mt-[12px] flex xl:flex-col flex-row gap-[8px] h-full'>
                                 <div className='w-full flex gap-[6px]'>
-                                    <span className='text-[12px]'>Enquiries to be followed up</span>
+                                    <span className='text-[14px]'>Enquiries to be followed up</span>
                                     <span className={`text-white flex items-center justify-center w-[20px] h-[20px] rounded-full bg-[#FF3E5B] text-[10px]`}>12</span>
                                 </div>
                                 <div className='w-full flex gap-[6px]'>
-                                    <span className='text-[12px]'>Pending POs to be released </span>
+                                    <span className='text-[14px]'>Pending POs to be released </span>
                                     <span className='text-white flex items-center justify-center w-[20px] h-[20px] rounded-full bg-[#FF3E5B] text-[10px]'>3</span>
                                 </div>
                                 <div className='w-full flex gap-[6px]'>
-                                    <span className='text-[12px]'>Vehicles to be delivered</span>
+                                    <span className='text-[14px]'>Vehicles to be delivered</span>
                                     <span className='text-white flex items-center justify-center w-[20px] h-[20px] rounded-full bg-[#FF3E5B] text-[10px]'>5</span>
                                 </div>
                             </div>
@@ -81,7 +81,7 @@ function RightContentBody({ theme }) {
                                     <path d="M14 13.61C14.4 13.08 14.8 12.54 15.2 12C16.16 12.72 17.41 13.66 18.4 14.4C18 14.93 17.6 15.47 17.2 16C16.21 15.26 14.96 14.32 14 13.61ZM3 15V11H2C1.47005 10.9984 0.962265 10.7872 0.587535 10.4125C0.212805 10.0377 0.00158273 9.52995 0 9L0 7C0.00158273 6.47005 0.212805 5.96227 0.587535 5.58753C0.962265 5.2128 1.47005 5.00158 2 5H6L11 2V14L6 11H5V15H3ZM12 4.65C12.4719 5.07019 12.8495 5.58546 13.1081 6.16197C13.3667 6.73847 13.5003 7.36316 13.5003 7.995C13.5003 8.62684 13.3667 9.25153 13.1081 9.82803C12.8495 10.4045 12.4719 10.9198 12 11.34V4.65ZM16 9V7H20V9H16ZM14 2.4C14.96 1.68 16.21 0.74 17.2 0C17.6 0.53 18 1.07 18.4 1.6C17.41 2.35 16.161 3.279 15.2 4C14.8 3.47 14.4 2.93 14 2.4Z" fill={`${theme === 'dark' ? 'white' : '#342C2C'}`} />
                                 </svg>
                                 {/* text */}
-                                <span className='font-bold text-[14px] select-none'>News</span>
+                                <span className='font-bold text-[16px] select-none'>News</span>
                             </div>
                             {/* icons */}
 
@@ -118,7 +118,7 @@ function RightContentBody({ theme }) {
                                     </svg>
                                 </div>
                                 {/* text */}
-                                <span className='font-bold text-[14px] select-none'>Upcoming Training</span>
+                                <span className='font-bold text-[16px] select-none'>Upcoming Training</span>
                             </div>
                             {/* icons */}
 
@@ -147,7 +147,7 @@ function RightContentBody({ theme }) {
                                     <path d="M7 10H12V15H7V10Z" fill={`${theme === 'dark' ? '#fff' : '#000'}`} />
                                 </svg>
                                 {/* text */}
-                                <span className='font-bold text-[14px] select-none'>Birthday Calendar</span>
+                                <span className='font-bold text-[16px] select-none'>Birthday Calendar</span>
                             </div>
                             {/* icons */}
 
@@ -182,7 +182,7 @@ function RightContentBody({ theme }) {
                                     <path d="M12.9824 9V3.5L18.4747 9H12.9824Z" fill={`${theme === 'dark' ? '#000' : '#fff'}`} />
                                 </svg>
                                 {/* text */}
-                                <span className='font-bold text-[14px] select-none'>MIS Reports</span>
+                                <span className='font-bold text-[16px] select-none'>MIS Reports</span>
                             </div>
                             {/* icons */}
 
