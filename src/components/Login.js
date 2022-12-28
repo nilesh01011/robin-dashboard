@@ -55,10 +55,10 @@ function Login() {
                 <img src='./images/logo.png' className='h-full lg:w-[160px] w-[140px]' alt='logo-images' />
             </div>
             {/* display contents */}
-            <div className='w-full lg:h-full h-max lg:mt-0 mt-10 flex flex-col lg:justify-center gap-[10px] z-20 relative'>
+            <div className='w-full lg:h-full h-max xl:mt-0 mt-8 flex flex-col xl:justify-center gap-[10px] z-20 relative'>
                 {/* main contents */}
 
-                <div className='flex flex-col h-max'>
+                <div className='flex flex-col justify-between h-max'>
                     {/* robin logo and content*/}
                     <div className='flex flex-col items-center justify-center'>
                         {/* robin logo */}
@@ -71,18 +71,18 @@ function Login() {
                             <h2 className='text-white text-[20px]'>Dealer Management System</h2>
                         </div>
                     </div>
-                    <div className='flex flex-col justify-between h-full mt-8'>
+                    <div className='flex flex-col justify-between h-full mt-6'>
                         {/* login content */}
                         <div className='w-full h-full flex items-center justify-center'>
-                            <div className='2xl:w-[420px] lg:w-[380px] sm:w-[360px] w-[320px] 2xl:h-[460px] h-max rounded-2xl bg-[rgba(40,39,44,0.8)] sm:py-[15px] py-[10px] px-[28px]'>
-                                <div className='flex flex-col items-center sm:gap-[10px] gap-[5px]'>
+                            <div className='2xl:w-[420px] lg:w-[380px] sm:w-[360px] w-[320px] h-max rounded-2xl bg-[rgba(40,39,44,0.8)] sm:py-[15px] py-[10px] px-[25px] mb-3'>
+                                <div className='flex flex-col items-center sm:gap-[8px] gap-[5px]'>
                                     <h1 className='font-bold xl:text-[26px] text-[20px] text-white'>Welcome!</h1>
                                     <p className='text-[#DEDEDE] xl:text-[14px] text-[12px] font-[400]'>Please enter your credentials to login</p>
 
                                     {/* login app */}
-                                    <form onSubmit={submitHandler} className='flex flex-col w-full h-full sm:mt-4 mt-3 gap-[2rem]'>
+                                    <form onSubmit={submitHandler} className='flex flex-col w-full h-full mt-3 gap-[1.6rem]'>
                                         {/* 1 */}
-                                        <div className='relative flex items-center border-b-[1px] border-[#DEDEDE] pb-[6px]'>
+                                        <div className='relative flex items-center border-b-[1px] border-[#DEDEDE] pb-[4px]'>
                                             <input className='bg-transparent w-full xl:text-base text-[14px] pl-[30px] placeholder:text-[#8E8585] text-white' type='text'
                                                 value={email}
                                                 onChange={(e) => setEmail(e.target.value)}
@@ -104,7 +104,7 @@ function Login() {
 
                                         {/* 2 */}
 
-                                        <div className='relative flex items-center border-b-[1px] border-[#DEDEDE] pb-[6px]'>
+                                        <div className='relative flex items-center border-b-[1px] border-[#DEDEDE] pb-[4px]'>
                                             <input className='bg-transparent w-full xl:text-base text-[14px] pl-[30px] placeholder:text-[#8E8585] text-white'
                                                 value={password}
                                                 onChange={(e) => setPassword(e.target.value)}
@@ -126,7 +126,7 @@ function Login() {
 
                                         {/* 3 */}
 
-                                        <div className='relative flex items-center gap-5'>
+                                        <div className='relative flex items-center gap-4'>
                                             <div className='border-b-[1px] border-[#DEDEDE] pb-[8px] w-[60%]'>
                                                 <input className='bg-transparent w-full xl:text-base text-[14px] placeholder:text-[#8E8585] text-white'
                                                     value={captcha}
@@ -152,10 +152,10 @@ function Login() {
 
                                         {/* button */}
 
-                                        <div className='w-full h-full flex flex-col justify-center items-center mt-2'>
-                                            <button className='rounded bg-[#FF3E5B] text-whiet w-full h-[50px] text-white'>Login</button>
+                                        <div className='w-full h-full flex flex-col justify-center items-center'>
+                                            <button className='rounded bg-[#FF3E5B] text-whiet w-full h-[45px] text-white'>Login</button>
                                             {/* forget password */}
-                                            <button className='rounded mt-4 font-light text-whiet w-max text-white text-center' type='button'>Forgot password?</button>
+                                            <button className='rounded mt-3 font-light text-whiet w-max text-white text-center' type='button'>Forgot password?</button>
                                         </div>
 
                                     </form>
