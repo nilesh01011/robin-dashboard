@@ -11,13 +11,13 @@ function BoxContent({ title, icons, counterBox, theme }) {
 
     return (
         <>
-            <div className='w-full h-[164px] rounded-lg shadow-[0_0_3px_rgba(0,0,0,0.2)]'>
+            <div className='w-full slg:h-[164px] h-max rounded-lg shadow-[0_0_3px_rgba(0,0,0,0.2)]'>
                 {/* head */}
                 <div className={`h-[25%] ${changeHeadTheme} rounded-t-lg flex items-center justify-between p-[12px]`}>
                     <div className='flex items-center gap-[8px]'>
                         {/* icons */}
                         {icons}
-                        <span className='text-[12px]'>{title}</span>
+                        <span className='text-[12px] font-bold'>{title}</span>
                     </div>
                     {/* watch more button */}
                     <div className='flex items-baseline'>
@@ -26,34 +26,34 @@ function BoxContent({ title, icons, counterBox, theme }) {
                 </div>
 
                 {/* content */}
-                <div className={`w-full ${changeBodyTheme} h-[75%] py-[1rem] flex items-center divide-x-[1px] rounded-b-lg `}>
-                    <div className='w-full flex flex-col items-center justify-center px-[2rem] h-full'>
-                        <h1 className={`font-bold text-[34px] ${counts[3] && 'text-[#FF3E5B]'}`}>{counts[0]}</h1>
-                        <h6 className='font-[400] text-[12px] whitespace-nowrap'>{countsName[0]}</h6>
+                <div className={`${changeBodyTheme} slg:h-[75%] h-max py-[1rem] flex items-center divide-x-[1px] rounded-b-lg`}>
+                    <div className='w-full flex flex-col items-center justify-center slg:px-[2rem] px-[15px] h-full'>
+                        <h1 className={`font-bold slg:text-[34px] xs:text-[24px] text-[16px] ${counts[3] && 'text-[#FF3E5B]'}`}>{counts[0]}</h1>
+                        <h6 className='font-[400] sm:text-[12px] text-[10px] text-center'>{countsName[0]}</h6>
                         {names[0] &&
-                            <h6 className='font-[400] text-[12px] whitespace-nowrap'>{names[0]}</h6>
+                            <h6 className='font-[400] sm:text-[12px] text-[10px] text-center'>{names[0]}</h6>
                         }
                     </div>
-                    <div className='w-full flex flex-col items-center justify-center px-[2rem] h-full'>
-                        <h1 className='font-bold text-[34px]'>{counts[1]}</h1>
-                        <h6 className='font-[400] text-[12px] whitespace-nowrap'>{countsName[1]}</h6>
+                    <div className='w-full flex flex-col items-center justify-center slg:px-[2rem] px-[15px] h-full'>
+                        <h1 className='font-bold slg:text-[34px] xs:text-[24px] text-[16px]'>{counts[1]}</h1>
+                        <h6 className='font-[400] sm:text-[12px] text-[10px] text-center'>{countsName[1]}</h6>
                         {names[1] &&
-                            <h6 className='font-[400] text-[12px] whitespace-nowrap'>{names[1]}</h6>
+                            <h6 className='font-[400] sm:text-[12px] text-[10px] text-center'>{names[1]}</h6>
                         }
                     </div>
-                    <div className='w-full flex flex-col items-center justify-center px-[2rem] h-full'>
-                        <h1 className='font-bold text-[34px]'>{counts[2]}</h1>
-                        <h6 className='font-[400] text-[12px] whitespace-nowrap'>{countsName[2]}</h6>
+                    <div className='w-full flex flex-col items-center justify-center slg:px-[2rem] px-[15px] h-full'>
+                        <h1 className='font-bold slg:text-[34px] xs:text-[24px] text-[16px]'>{counts[2]}</h1>
+                        <h6 className='font-[400] sm:text-[12px] text-[10px] text-center whitespace-nowrap'>{countsName[2]}</h6>
                         {names[2] &&
-                            <h6 className='font-[400] text-[12px] whitespace-nowrap'>{names[2]}</h6>
+                            <h6 className='font-[400] sm:text-[12px] text-[10px] text-center whitespace-nowrap'>{names[2]}</h6>
                         }
                     </div>
 
                     {
                         counterBox.length === 4 ? (
-                            <div className='w-full flex flex-col items-center justify-center px-[2rem] h-full'>
-                                <h1 className="font-bold text-[34px] text-[#FF3E5B]">{counts[3]}</h1>
-                                <h6 className='font-[400] text-[12px] whitespace-nowrap'>{countsName[3]}</h6>
+                            <div className='w-full flex flex-col items-center justify-center slg:px-[2rem] px-[15px]'>
+                                <h1 className="font-bold slg:text-[34px] xs:text-[24px] text-[16px] text-[#FF3E5B]">{counts[3]}</h1>
+                                <h6 className='font-[400] sm:text-[12px] text-[10px] text-center'>{countsName[3]}</h6>
                             </div>
                         ) : ('')
                     }

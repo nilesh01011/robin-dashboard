@@ -1,19 +1,35 @@
 import React, { useState } from 'react'
 import { FaUserCircle } from 'react-icons/fa'
 import { HiChevronDown } from 'react-icons/hi'
+import { AiOutlineLeft } from 'react-icons/ai'
 
 function TopNav({ theme }) {
     const [isOpen, setIsOpen] = useState(false)
+    // const [isMobile, setIsMobile] = useState(false);
+
+    const handleNavbar = () => {
+        document.querySelector("#navbars").style.cssText = 'left: 0%; transition: left cubic-bezier(0.4, 0, 0.2, 1) 50ms; transition-duration: 1000ms;'
+    }
     return (
         <>
-            <div className='w-full h-max flex items-baseline justify-end pt-[1rem] mb-[8px]'>
+            <div className='w-full h-max flex items-baseline slg:justify-end justify-between py-[17px]'>
+                {/* mobile view icons */}
+                <div className='w-max slg:hidden block'>
+                    <button onClick={() => handleNavbar()} type='button' className='flex items-center gap-1'>
+                        <div className='w-[15px] h-[29px] flex items-start transition-all duration-300 relative left-[4px]'>
+                            <img src={`${theme === 'dark' ? './images/B_dark_theme.svg' : './images/B_Light_theme.svg'}`} className='h-full mr-auto' alt='robin-logo' />
+                        </div>
+                        {/* icons */}
+                        <AiOutlineLeft size={16} className={`${isOpen ? `${theme === 'dark' ? 'text-white' : 'text-black'}` : 'text-[#FF3E5B]'} rotate-180`} />
+                    </button>
+                </div>
                 <div className='flex items-center gap-6'>
                     {/* notificons */}
                     <div className='relative'>
                         {/* <FaRegBell size={24} /> */}
                         {/* icons */}
                         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.25222 2.09071C9.42805 1.25428 10.1472 0.600098 11.0486 0.600098C11.9607 0.600098 12.6863 1.26995 12.8511 2.12066C15.7298 2.98796 17.8114 5.75089 17.8114 8.98819V13.6356C17.8114 13.9643 17.9369 14.2743 18.1523 14.4988L21.132 17.6051C21.6771 18.1734 21.3447 19.2334 20.4529 19.2334H13.7035C13.4213 20.461 12.3575 21.4001 11.0486 21.4001H10.7517C9.44286 21.4001 8.37905 20.461 8.09684 19.2334H1.54797C0.656167 19.2334 0.323775 18.1734 0.868944 17.6051L3.84863 14.4988C4.06399 14.2743 4.18949 13.9643 4.18949 13.6356V8.98819C4.18949 5.71264 6.32058 2.92274 9.25222 2.09071ZM11.0005 3.1387C7.97485 3.17992 5.48949 5.75803 5.48949 8.98819V13.6356C5.48949 14.292 5.23961 14.9267 4.78678 15.3988L2.35538 17.9334H19.6455L17.2141 15.3988C16.7613 14.9267 16.5114 14.292 16.5114 13.6356V8.98819C16.5114 5.75803 14.0261 3.17992 11.0005 3.1387ZM9.45992 19.2334C9.69291 19.7543 10.1961 20.1001 10.7517 20.1001H11.0486C11.6042 20.1001 12.1074 19.7543 12.3404 19.2334H9.45992Z" fill={theme === "dark" ? 'white' : 'black'} />
+                            <path fillRule="evenodd" clipRule="evenodd" d="M9.25222 2.09071C9.42805 1.25428 10.1472 0.600098 11.0486 0.600098C11.9607 0.600098 12.6863 1.26995 12.8511 2.12066C15.7298 2.98796 17.8114 5.75089 17.8114 8.98819V13.6356C17.8114 13.9643 17.9369 14.2743 18.1523 14.4988L21.132 17.6051C21.6771 18.1734 21.3447 19.2334 20.4529 19.2334H13.7035C13.4213 20.461 12.3575 21.4001 11.0486 21.4001H10.7517C9.44286 21.4001 8.37905 20.461 8.09684 19.2334H1.54797C0.656167 19.2334 0.323775 18.1734 0.868944 17.6051L3.84863 14.4988C4.06399 14.2743 4.18949 13.9643 4.18949 13.6356V8.98819C4.18949 5.71264 6.32058 2.92274 9.25222 2.09071ZM11.0005 3.1387C7.97485 3.17992 5.48949 5.75803 5.48949 8.98819V13.6356C5.48949 14.292 5.23961 14.9267 4.78678 15.3988L2.35538 17.9334H19.6455L17.2141 15.3988C16.7613 14.9267 16.5114 14.292 16.5114 13.6356V8.98819C16.5114 5.75803 14.0261 3.17992 11.0005 3.1387ZM9.45992 19.2334C9.69291 19.7543 10.1961 20.1001 10.7517 20.1001H11.0486C11.6042 20.1001 12.1074 19.7543 12.3404 19.2334H9.45992Z" fill={theme === "dark" ? 'white' : 'black'} />
                         </svg>
 
                         {/* notificons count */}
@@ -30,22 +46,26 @@ function TopNav({ theme }) {
                         </div>
 
                         {/* text */}
-                        <div className='flex flex-col text-[12px] leading-[1rem] w-max'>
-                            <span>OneStop</span>
-                            <span>Help Desk</span>
+                        <div className='sm:block hidden'>
+                            <div className='flex flex-col text-[12px] leading-[1rem] w-max'>
+                                <span>OneStop</span>
+                                <span>Help Desk</span>
+                            </div>
                         </div>
                     </div>
 
                     {/* profile box */}
-                    <div className='flex items-center gap-[6px] w-full relative'>
+                    <div onClick={() => setIsOpen(!isOpen)} className='flex items-center sm:gap-[6px] gap-[3px] w-full relative cursor-pointer'>
                         <div>
                             <FaUserCircle size={25} />
                         </div>
 
-                        <button onClick={() => setIsOpen(!isOpen)} className='flex items-end gap-[3px]'>
-                            <div className='flex flex-col items-start'>
-                                <span className='text-[12px]'>John Smith</span>
-                                <span className='text-[12px] text-[#FF3E5B]'>Mahindra Automotive</span>
+                        <button className='flex items-end gap-[3px]'>
+                            <div className='sm:block hidden'>
+                                <div className='flex flex-col items-start'>
+                                    <span className='text-[12px]'>John Smith</span>
+                                    <span className='text-[12px] text-[#FF3E5B]'>Mahindra Automotive</span>
+                                </div>
                             </div>
 
                             <HiChevronDown size={16} className={`${isOpen && 'rotate-180 transition-all'} transition-all`} />
@@ -53,7 +73,7 @@ function TopNav({ theme }) {
 
                         {
                             isOpen && (
-                                <div className={`w-full absolute top-[115%] left-0 ${theme === 'dark' ? 'bg-[#242424]' : 'bg-white'} rounded shadow-md`}>
+                                <div className={`w-[166px] absolute top-[115%] sm:left-0 -left-[280%] ${theme === 'dark' ? 'bg-[#242424]' : 'bg-white'} rounded shadow-md`}>
                                     <ul className={`${theme === 'dark' ? 'divide-[#635D5D]' : 'divide-[#DEDEDE]'} divide-y`}>
                                         <li className='text-[12px] text-left p-[6px] px-[10px]'>List 1</li>
                                         <li className='text-[12px] text-left p-[6px] px-[10px]'>List 2</li>

@@ -33,7 +33,7 @@ function DashboardPage() {
 
     return (
         <>
-            <div className='w-full h-full '>
+            <div className='w-full h-full'>
                 <div className='flex'>
                     {/* navbar */}
                     <Navbar theme={getTheme} handleTheme={handleTheme} />

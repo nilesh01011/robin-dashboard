@@ -40,7 +40,7 @@ function RightContentBody({ theme }) {
 
                 <div className='flex flex-col gap-[22px] mt-[1.28rem]'>
                     {/* box 1 */}
-                    <div className={`rounded-md w-full ${isOpen ? 'h-max' : 'h-[50px]'} overflow-hidden ${changeTheme} flex flex-col items-center p-[16px] shadow-[0_0_3px_rgba(0,0,0,0.2)]`}>
+                    <div className={`rounded-md w-full ${isOpen ? 'h-max' : 'h-[50px]'} overflow-hidden ${changeTheme} flex flex-col items-center p-[16px] pt-[14px] shadow-[0_0_3px_rgba(0,0,0,0.2)]`}>
                         <div onClick={() => setIsOpen(!isOpen)} className='w-full flex items-center justify-between cursor-pointer'>
                             <div className='w-full flex items-center gap-[5px]'>
                                 {/* icons */}
@@ -73,7 +73,7 @@ function RightContentBody({ theme }) {
                     </div>
 
                     {/* box 2 */}
-                    <div className={`rounded-md w-full ${isOpens ? 'h-max' : 'h-[50px]'} overflow-hidden ${changeTheme} flex flex-col items-center p-[16px] shadow-[0_0_3px_rgba(0,0,0,0.2)]`}>
+                    <div className={`rounded-md w-full ${isOpens ? 'h-max' : 'h-[50px]'} overflow-hidden ${changeTheme} flex flex-col items-center p-[16px] pt-[14px] shadow-[0_0_3px_rgba(0,0,0,0.2)]`}>
                         <div onClick={() => setIsOpens(!isOpens)} className='w-full flex items-center justify-between cursor-pointer'>
                             <div className='w-full flex items-center gap-[5px]'>
                                 {/* icons */}
@@ -105,7 +105,7 @@ function RightContentBody({ theme }) {
                     </div>
 
                     {/* box 3 */}
-                    <div className={`rounded-md w-full ${isOpen_1 ? 'h-max' : 'h-[50px]'} overflow-hidden ${changeTheme} flex flex-col items-center p-[16px] shadow-[0_0_3px_rgba(0,0,0,0.2)]`}>
+                    <div className={`rounded-md w-full ${isOpen_1 ? 'h-max' : 'h-[50px]'} overflow-hidden ${changeTheme} flex flex-col items-center p-[16px] pt-[14px] shadow-[0_0_3px_rgba(0,0,0,0.2)]`}>
                         <div onClick={() => setIsOpen_1(!isOpen_1)} className='w-full flex items-center justify-between cursor-pointer'>
                             <div className='w-full flex items-center gap-[5px]'>
                                 {/* icons */}
@@ -137,7 +137,7 @@ function RightContentBody({ theme }) {
                     </div>
 
                     {/* box 4 */}
-                    <div className={`rounded-md w-full ${isOpen_2 ? 'h-max' : 'h-[50px]'} overflow-hidden ${changeTheme} flex flex-col items-center p-[16px] shadow-[0_0_3px_rgba(0,0,0,0.2)]`}>
+                    <div className={`rounded-md w-full ${isOpen_2 ? 'h-max' : 'h-[50px]'} overflow-hidden ${changeTheme} flex flex-col items-center p-[16px] pt-[14px] shadow-[0_0_3px_rgba(0,0,0,0.2)]`}>
                         <div onClick={() => setIsOpen_2(!isOpen_2)} className='w-full flex items-center justify-between cursor-pointer'>
                             <div className='w-full flex items-center gap-[5px]'>
                                 {/* icons */}
@@ -171,7 +171,7 @@ function RightContentBody({ theme }) {
                     </div>
 
                     {/* box 5 */}
-                    <div className={`rounded-md w-full ${isOpen_3 ? 'h-max' : 'h-[50px]'} overflow-hidden ${changeTheme} flex flex-col items-center p-[16px] shadow-[0_0_3px_rgba(0,0,0,0.2)]`}>
+                    <div className={`rounded-md w-full ${isOpen_3 ? 'h-max' : 'h-[50px]'} overflow-hidden ${changeTheme} flex flex-col items-center p-[16px] pt-[14px] shadow-[0_0_3px_rgba(0,0,0,0.2)]`}>
                         <div onClick={() => setIsOpen_3(!isOpen_3)} className='w-full flex items-center justify-between cursor-pointer'>
                             <div className='w-full flex items-center gap-[5px]'>
                                 {/* icons */}

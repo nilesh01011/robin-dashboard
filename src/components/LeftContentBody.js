@@ -7,7 +7,7 @@ function LeftContentBody({ theme }) {
         <>
             <div className='xl:w-[69%] w-full'>
                 {/* title */}
-                <div className='flex items-center justify-between'>
+                <div className='flex'>
                     <h1 className='text-[24px] font-bold'>Welcome back John!</h1>
                 </div>
                 {/* box content */}
