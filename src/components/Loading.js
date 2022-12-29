@@ -18,12 +18,12 @@ function Loading() {
                     </div>
                     {/* loading animations */}
                     <div className='w-full h-full flex items-center justify-center'>
-                        <div className='w-[400px] h-[80px] flex items-end gap-1 justify-center'>
+                        <div className='w-[400px] h-[80px] flex items-center gap-1 justify-center'>
                             <img src='./images/R.svg' className={`${isLoading ? 'opacity-1' : 'opacity-0'} transition-all h-[50px] w-[35px]`} alt='logo-images' />
                             <img src='./images/O.svg' className={`${isLoading ? 'opacity-1' : 'opacity-0'} transition-all h-[50px] w-[35px]`} alt='logo-images' />
                             <img src='./images/B_dark_theme.svg' className='h-[55px] w-[30px]' alt='logo-images' />
-                            <img src='./images/i.svg' className={`${isLoading ? 'opacity-1' : 'opacity-0'} transition-all h-[50px] w-[25px]`} alt='logo-images' />
-                            <img src='./images/N.svg' className={`${isLoading ? 'opacity-1' : 'opacity-0'} transition-all h-[50px] w-[35px]`} alt='logo-images' />
+                            <img src='./images/i.svg' className={`${isLoading ? 'opacity-1' : 'opacity-0'} transition-all h-[45px] w-[15px]`} alt='logo-images' />
+                            <img src='./images/N.svg' className={`${isLoading ? 'opacity-1' : 'opacity-0'} transition-all h-[45px] w-[35px]`} alt='logo-images' />
                         </div>
                     </div>
                     {/* bottom logo */}

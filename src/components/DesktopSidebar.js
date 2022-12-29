@@ -4,7 +4,7 @@ import { BsMoon } from 'react-icons/bs'
 import NavTabs from './NavTabs';
 
 function DesktopSidebar({ theme, handleTheme }) {
-    const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(true);
     return (
         <>
             <nav className={` overflow-hidden ${isOpen ? 'slg:w-[60px] -w-[120%]' : 'slg:w-[240px] w-full'} h-full ${theme === 'dark' ? 'bg-[#242424]' : 'bg-[#F4F4F4]'} slg:transition-none transition-all slg:duration-none duration-1000 px-[14px] pt-[14px] flex flex-col justify-between select-none shadow-[0_0_3px_rgba(0,0,0,0.2)]`}>
