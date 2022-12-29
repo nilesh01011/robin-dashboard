@@ -10,36 +10,48 @@ function MainContentSkelaton({ theme }) {
                 <div className='max-h-[70px] py-[17px] flex items-center justify-end'>
                     <div className='flex items-center gap-6'>
                         {/* notification icons */}
-                        <div className='h-[22px] w-[22px] rounded-[5px]'>
-                            <SkeletonTheme>
-                                <Skeleton height={20} />
+                        <div className='h-[30px] w-[30px] rounded-[5px]'>
+                            <SkeletonTheme baseColor={`${theme === 'dark' ? '#444' : '#f5f5f5'}`} highlightColor={`${theme === 'dark' ? '#50535a' : '#ebebeb'}`}>
+                                <Skeleton height={30} />
                             </SkeletonTheme>
                         </div>
                         {/* help desk */}
                         <div className='flex items-center gap-[5px]'>
-                            <div className='h-[22px] w-[22px] rounded-[5px]'>
-                                <Skeleton height={20} />
+                            <div className='h-[30px] w-[30px] rounded-[5px]'>
+                                <SkeletonTheme baseColor={`${theme === 'dark' ? '#444' : '#f5f5f5'}`} highlightColor={`${theme === 'dark' ? '#50535a' : '#ebebeb'}`}>
+                                    <Skeleton height={30} />
+                                </SkeletonTheme>
                             </div>
-                            <div className='leading-[10px]'>
-                                <div className=' w-[40px]'>
-                                    <Skeleton height={3} />
+                            <div className='leading-[15px]'>
+                                <div className='w-[40px]'>
+                                    <SkeletonTheme baseColor={`${theme === 'dark' ? '#444' : '#f5f5f5'}`} highlightColor={`${theme === 'dark' ? '#50535a' : '#ebebeb'}`}>
+                                        <Skeleton height={6} />
+                                    </SkeletonTheme>
                                 </div>
                                 <div className=' w-[57px]'>
-                                    <Skeleton height={3} />
+                                    <SkeletonTheme baseColor={`${theme === 'dark' ? '#444' : '#f5f5f5'}`} highlightColor={`${theme === 'dark' ? '#50535a' : '#ebebeb'}`}>
+                                        <Skeleton height={6} />
+                                    </SkeletonTheme>
                                 </div>
                             </div>
                         </div>
                         {/* user profile */}
-                        <div className='flex items-center gap-[5px]'>
-                            <div className='h-[22px] w-[22px] rounded-[5px]'>
-                                <Skeleton height={20} />
+                        <div className=' flex items-center gap-[5px]'>
+                            <div className='h-[30px] w-[30px] rounded-full'>
+                                <SkeletonTheme baseColor={`${theme === 'dark' ? '#444' : '#f5f5f5'}`} highlightColor={`${theme === 'dark' ? '#50535a' : '#ebebeb'}`}>
+                                    <Skeleton height={30} />
+                                </SkeletonTheme>
                             </div>
                             <div className='leading-[10px]'>
-                                <div className=' w-[40px]'>
-                                    <Skeleton height={3} />
+                                <div className='w-[80px]'>
+                                    <SkeletonTheme baseColor={`${theme === 'dark' ? '#444' : '#f5f5f5'}`} highlightColor={`${theme === 'dark' ? '#50535a' : '#ebebeb'}`}>
+                                        <Skeleton height={6} />
+                                    </SkeletonTheme>
                                 </div>
-                                <div className='w-[57px]'>
-                                    <Skeleton height={3} />
+                                <div className='w-[120px]'>
+                                    <SkeletonTheme baseColor={`${theme === 'dark' ? '#444' : '#f5f5f5'}`} highlightColor={`${theme === 'dark' ? '#50535a' : '#ebebeb'}`}>
+                                        <Skeleton height={6} />
+                                    </SkeletonTheme>
                                 </div>
                             </div>
                         </div>
@@ -49,7 +61,9 @@ function MainContentSkelaton({ theme }) {
                 <div className='w-full mt-[15px]'>
                     {/* DASHBOARD title */}
                     <div className='w-[100px]'>
-                        <Skeleton height={30} />
+                        <SkeletonTheme baseColor={`${theme === 'dark' ? '#444' : '#f5f5f5'}`} highlightColor={`${theme === 'dark' ? '#50535a' : '#ebebeb'}`}>
+                            <Skeleton height={30} />
+                        </SkeletonTheme>
                     </div>
                     <div className='flex justify-between'>
                         {/* left sides */}
@@ -57,31 +71,33 @@ function MainContentSkelaton({ theme }) {
                             <div>
                                 {/* main title */}
                                 <div className='w-[200px] my-[1rem]'>
-                                    <Skeleton height={30} />
+                                    <SkeletonTheme baseColor={`${theme === 'dark' ? '#444' : '#f5f5f5'}`} highlightColor={`${theme === 'dark' ? '#50535a' : '#ebebeb'}`}>
+                                        <Skeleton height={30} />
+                                    </SkeletonTheme>
                                 </div>
                                 {/* main box content */}
                                 <div className='flex flex-col gap-[22px] h-max w-full'>
                                     {/* 1 */}
                                     <div className='h-[164px] rounded-lg'>
-                                        <SkeletonTheme>
+                                        <SkeletonTheme baseColor={`${theme === 'dark' ? '#444' : '#f5f5f5'}`} highlightColor={`${theme === 'dark' ? '#50535a' : '#ebebeb'}`}>
                                             <Skeleton height={164} />
                                         </SkeletonTheme>
                                     </div>
                                     {/* 2 */}
                                     <div className='h-[164px] rounded-lg'>
-                                        <SkeletonTheme>
+                                        <SkeletonTheme baseColor={`${theme === 'dark' ? '#444' : '#f5f5f5'}`} highlightColor={`${theme === 'dark' ? '#50535a' : '#ebebeb'}`}>
                                             <Skeleton height={164} />
                                         </SkeletonTheme>
                                     </div>
                                     {/* 3 */}
                                     <div className='h-[164px] rounded-lg'>
-                                        <SkeletonTheme>
+                                        <SkeletonTheme baseColor={`${theme === 'dark' ? '#444' : '#f5f5f5'}`} highlightColor={`${theme === 'dark' ? '#50535a' : '#ebebeb'}`}>
                                             <Skeleton height={164} />
                                         </SkeletonTheme>
                                     </div>
                                     {/* 4 */}
                                     <div className='h-[164px] rounded-lg'>
-                                        <SkeletonTheme>
+                                        <SkeletonTheme baseColor={`${theme === 'dark' ? '#444' : '#f5f5f5'}`} highlightColor={`${theme === 'dark' ? '#50535a' : '#ebebeb'}`}>
                                             <Skeleton height={164} />
                                         </SkeletonTheme>
                                     </div>
@@ -93,33 +109,47 @@ function MainContentSkelaton({ theme }) {
                             {/* configuration */}
                             <div className='flex items-center justify-between'>
                                 <div className='w-[135px] rounded-lg'>
-                                    <Skeleton height={40} />
+                                    <SkeletonTheme baseColor={`${theme === 'dark' ? '#444' : '#f5f5f5'}`} highlightColor={`${theme === 'dark' ? '#50535a' : '#ebebeb'}`}>
+                                        <Skeleton height={40} />
+                                    </SkeletonTheme>
                                 </div>
                                 <div className='w-[100px]'>
-                                    <Skeleton height={20} />
+                                    <SkeletonTheme baseColor={`${theme === 'dark' ? '#444' : '#f5f5f5'}`} highlightColor={`${theme === 'dark' ? '#50535a' : '#ebebeb'}`}>
+                                        <Skeleton height={20} />
+                                    </SkeletonTheme>
                                 </div>
                             </div>
 
                             <div className='mt-[1.4rem] flex flex-col gap-[20px]'>
                                 {/* action box */}
                                 <div className='w-full rounded-lg'>
-                                    <Skeleton height={162} />
+                                    <SkeletonTheme baseColor={`${theme === 'dark' ? '#444' : '#f5f5f5'}`} highlightColor={`${theme === 'dark' ? '#50535a' : '#ebebeb'}`}>
+                                        <Skeleton height={162} />
+                                    </SkeletonTheme>
                                 </div>
                                 {/* news box */}
                                 <div className='w-full rounded-lg'>
-                                    <Skeleton height={166} />
+                                    <SkeletonTheme baseColor={`${theme === 'dark' ? '#444' : '#f5f5f5'}`} highlightColor={`${theme === 'dark' ? '#50535a' : '#ebebeb'}`}>
+                                        <Skeleton height={166} />
+                                    </SkeletonTheme>
                                 </div>
                                 {/* upcoming news box */}
                                 <div className='w-full rounded-lg'>
-                                    <Skeleton height={220} />
+                                    <SkeletonTheme baseColor={`${theme === 'dark' ? '#444' : '#f5f5f5'}`} highlightColor={`${theme === 'dark' ? '#50535a' : '#ebebeb'}`}>
+                                        <Skeleton height={220} />
+                                    </SkeletonTheme>
                                 </div>
                                 {/* calendar box */}
                                 <div className='w-full rounded-lg'>
-                                    <Skeleton height={48} />
+                                    <SkeletonTheme baseColor={`${theme === 'dark' ? '#444' : '#f5f5f5'}`} highlightColor={`${theme === 'dark' ? '#50535a' : '#ebebeb'}`}>
+                                        <Skeleton height={48} />
+                                    </SkeletonTheme>
                                 </div>
                                 {/* upcoming news box */}
                                 <div className='w-full rounded-lg'>
-                                    <Skeleton height={48} />
+                                    <SkeletonTheme baseColor={`${theme === 'dark' ? '#444' : '#f5f5f5'}`} highlightColor={`${theme === 'dark' ? '#50535a' : '#ebebeb'}`}>
+                                        <Skeleton height={48} />
+                                    </SkeletonTheme>
                                 </div>
                             </div>
                         </div>

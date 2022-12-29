@@ -10,7 +10,7 @@ function MainContent({ theme }) {
     useEffect(() => {
         setTimeout(() => {
             setIsLoading(false)
-        }, 1500)
+        }, 5000)
     }, [])
 
     return (
