@@ -1,5 +1,4 @@
-import React, { useState } from 'react'
-import { AiOutlineLeft, AiOutlineSearch } from 'react-icons/ai'
+import React from 'react'
 import { BsMoon } from 'react-icons/bs'
 import NavTabs from './NavTabs';
 
@@ -12,7 +11,7 @@ function MobileSidebar({ theme, handleTheme }) {
 
     return (
         <>
-            <nav id='navbars' className={`overflow-hidden z-[99999] w-full h-max fixed top-0 -left-[150%] bottom-0 ${theme === 'dark' ? 'bg-[#242424]' : 'bg-[#F4F4F4]'} px-[14px] pt-[14px] flex flex-col justify-between select-none shadow-[0_0_3px_rgba(0,0,0,0.2)]`}>
+            <nav id='navbars' className={`overflow-hidden z-[99999] w-full fixed top-0 -left-[150%] bottom-0 ${theme === 'dark' ? 'bg-[#242424]' : 'bg-[#F4F4F4]'} px-[14px] pt-[14px] flex flex-col justify-between select-none shadow-[0_0_3px_rgba(0,0,0,0.2)]`}>
                 {/* ${!isOpen ? 'transition-all duration-1000' : ''} */}
                 <div className='w-full'>
                     {/* buttons */}

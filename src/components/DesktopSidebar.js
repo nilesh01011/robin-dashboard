@@ -44,7 +44,7 @@ function DesktopSidebar({ theme, handleTheme }) {
                     <NavTabs isOpen={isOpen} theme={theme} />
                 </div>
                 {/* fixed bottom-[3.5rem] */}
-                <div className={`w-max 1x1:fixed lg:absolute slg:fixed slg:bottom-10 slg:mb-0 mb-6`}>
+                <div className={`w-max fixed bottom-10 slg:mb-0 mb-6`}>
                     <button onClick={() => handleTheme()} type='button' className={`w-[30px] h-[30px] rounded-full flex items-center justify-center ${theme === 'dark' ? 'bg-[#0B0B0C]' : 'bg-white'}`}>
                         {
                             theme === 'dark' ? (

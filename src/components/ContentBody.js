@@ -15,7 +15,7 @@ function ContentBody({ theme }) {
                 </div>
 
                 {/* main content body */}
-                <div className='w-full h-full flex my-[20px] items-start justify-between flex-wrap xl:flex-row'>
+                <div className='w-full h-full flex slg:my-[20px] mt-[15px] mb-[25px] items-start justify-between flex-wrap xl:flex-row'>
                     <LeftContentBody theme={theme} />
                     <RightContentBody theme={theme} />
                 </div>
