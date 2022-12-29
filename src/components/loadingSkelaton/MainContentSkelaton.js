@@ -22,7 +22,7 @@ function MainContentSkelaton({ theme }) {
                                     <Skeleton height={30} />
                                 </SkeletonTheme>
                             </div>
-                            <div className='leading-[15px]'>
+                            <div className='leading-[15px] sm:block hidden'>
                                 <div className='w-[40px]'>
                                     <SkeletonTheme baseColor={`${theme === 'dark' ? '#444' : '#f5f5f5'}`} highlightColor={`${theme === 'dark' ? '#50535a' : '#ebebeb'}`}>
                                         <Skeleton height={6} />
@@ -42,7 +42,7 @@ function MainContentSkelaton({ theme }) {
                                     <Skeleton height={30} />
                                 </SkeletonTheme>
                             </div>
-                            <div className='leading-[10px]'>
+                            <div className='leading-[10px] sm:block hidden'>
                                 <div className='w-[80px]'>
                                     <SkeletonTheme baseColor={`${theme === 'dark' ? '#444' : '#f5f5f5'}`} highlightColor={`${theme === 'dark' ? '#50535a' : '#ebebeb'}`}>
                                         <Skeleton height={6} />
@@ -65,7 +65,7 @@ function MainContentSkelaton({ theme }) {
                             <Skeleton height={30} />
                         </SkeletonTheme>
                     </div>
-                    <div className='flex justify-between'>
+                    <div className='flex xl:flex-row flex-col justify-between'>
                         {/* left sides */}
                         <div className='xl:w-[69%] w-full'>
                             <div>
