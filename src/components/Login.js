@@ -59,7 +59,7 @@ function Login() {
                 {/* main contents */}
                 <div className='h-full flex flex-col justify-center'>
                     {/* robin logo and content*/}
-                    <div className='h-max flex flex-col items-center xl:mb-0 md:mb-7 sm:mt-6'>
+                    <div className='h-max flex flex-col items-center mb-7 sm:mt-6'>
                         {/* robin logo */}
                         <div className='h-max flex flex-col items-center justify-center'>
                             <img src='./images/RobinDark_theme.svg' className='1x1:h-[80px] h-[60px] w-[245px]' alt='robin-images' />
