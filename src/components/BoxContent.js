@@ -31,21 +31,21 @@ function BoxContent({ title, icons, counterBox, theme }) {
                         <h1 className={`font-bold slg:text-[34px] xs:text-[24px] text-[16px] ${counts[3] && 'text-[#FF3E5B]'}`}>{counts[0]}</h1>
                         <h6 className='font-[400] sm:text-[12px] text-[10px] text-center'>{countsName[0]}</h6>
                         {names[0] &&
-                            <h6 className='font-[400] sm:text-[12px] text-[10px] text-center'>{names[0]}</h6>
+                            <h6 className='font-[400] xs:text-[12px] text-[10px] text-center'>{names[0]}</h6>
                         }
                     </div>
                     <div className='w-full flex flex-col items-center justify-center slg:px-[2rem] px-[15px] h-full'>
                         <h1 className='font-bold slg:text-[34px] xs:text-[24px] text-[16px]'>{counts[1]}</h1>
                         <h6 className='font-[400] sm:text-[12px] text-[10px] text-center'>{countsName[1]}</h6>
                         {names[1] &&
-                            <h6 className='font-[400] sm:text-[12px] text-[10px] text-center'>{names[1]}</h6>
+                            <h6 className='font-[400] xs:text-[12px] text-[10px] text-center'>{names[1]}</h6>
                         }
                     </div>
                     <div className='w-full flex flex-col items-center justify-center slg:px-[2rem] px-[15px] h-full'>
                         <h1 className='font-bold slg:text-[34px] xs:text-[24px] text-[16px]'>{counts[2]}</h1>
-                        <h6 className='font-[400] sm:text-[12px] text-[10px] text-center whitespace-nowrap'>{countsName[2]}</h6>
+                        <h6 className='font-[400] xs:text-[12px] text-[10px] text-center whitespace-nowrap'>{countsName[2]}</h6>
                         {names[2] &&
-                            <h6 className='font-[400] sm:text-[12px] text-[10px] text-center whitespace-nowrap'>{names[2]}</h6>
+                            <h6 className='font-[400] xs:text-[12px] text-[10px] text-center whitespace-nowrap'>{names[2]}</h6>
                         }
                     </div>
 
@@ -53,7 +53,7 @@ function BoxContent({ title, icons, counterBox, theme }) {
                         counterBox.length === 4 ? (
                             <div className='w-full flex flex-col items-center justify-center slg:px-[2rem] px-[15px]'>
                                 <h1 className="font-bold slg:text-[34px] xs:text-[24px] text-[16px] text-[#FF3E5B]">{counts[3]}</h1>
-                                <h6 className='font-[400] sm:text-[12px] text-[10px] text-center'>{countsName[3]}</h6>
+                                <h6 className='font-[400] xs:text-[12px] text-[10px] text-center'>{countsName[3]}</h6>
                             </div>
                         ) : ('')
                     }
