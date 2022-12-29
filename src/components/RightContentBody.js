@@ -55,7 +55,7 @@ function RightContentBody({ theme }) {
                         {/* contents body */}
                         {
                             isOpen &&
-                            <div className='w-full text-left mt-[12px] flex xl:flex-col flex-row gap-[8px] h-full'>
+                            <div className='w-full text-left mt-[12px] flex xl:flex-col sm:flex-row flex-col gap-[8px] h-full'>
                                 <div className='w-full flex gap-[6px]'>
                                     <span className='text-[14px]'>Enquiries to be followed up</span>
                                     <span className={`text-white flex items-center justify-center w-[20px] h-[20px] rounded-full bg-[#FF3E5B] text-[10px]`}>12</span>
