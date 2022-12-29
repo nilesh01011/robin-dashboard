@@ -48,19 +48,18 @@ function Login() {
     };
 
     return (
-        <div className='h-screen w-full relative overflow-hidden bg-no-repeat bg-cover pt-[20px]' style={{ backgroundImage: 'url("./images/mainbg.png")' }}>
+        <div className='h-screen w-full flex flex-col relative overflow-hidden bg-no-repeat bg-cover pt-[20px]' style={{ backgroundImage: 'url("./images/mainbg.png")' }}>
 
             {/* logo images */}
             <div className='w-full h-[20px] flex lg:justify-end justify-center lg:pr-[25px]'>
                 <img src='./images/logo.png' className='h-full lg:w-[160px] w-[140px]' alt='logo-images' />
             </div>
             {/* display contents */}
-            <div className='w-full sm:h-[90%] h-max sm:mt-0 mt-8 flex flex-col sm:justify-center gap-[10px] z-20 relative'>
+            <div className='w-full sm:h-[90%] h-full sm:mt-0 mt-8 flex flex-col justify-center gap-[10px] z-20 relative'>
                 {/* main contents */}
-
-                <div className='flex flex-col md:justify-between h-max'>
+                <div className='h-full flex flex-col justify-center'>
                     {/* robin logo and content*/}
-                    <div className='flex flex-col items-center justify-center xl:mb-0 md:mb-7'>
+                    <div className='h-max flex flex-col items-center xl:mb-0 md:mb-7 sm:mt-6'>
                         {/* robin logo */}
                         <div className='h-max flex flex-col items-center justify-center'>
                             <img src='./images/RobinDark_theme.svg' className='1x1:h-[80px] h-[60px] w-[245px]' alt='robin-images' />
@@ -78,9 +77,9 @@ function Login() {
                             <h2 className='text-white 1x1:text-[24px] text-[20px]'>Dealer Management System</h2>
                         </div>
                     </div>
-                    <div className='flex flex-col justify-between h-full mt-6'>
-                        {/* login content */}
-                        <div className='w-full h-full flex items-center justify-center'>
+                    {/* login content */}
+                    <div className='flex flex-col'>
+                        <div className='w-full h-max flex items-center justify-center'>
                             <div className='2xl:w-[420px] lg:w-[380px] sm:w-[360px] w-[320px] h-max rounded-2xl bg-[rgba(40,39,44,0.8)] sm:py-[15px] py-[10px] px-[25px] mb-3'>
                                 <div className='flex flex-col items-center sm:gap-[8px] gap-[5px]'>
                                     <h1 className='font-bold xl:text-[26px] text-[20px] text-white'>Welcome!</h1>
@@ -170,19 +169,18 @@ function Login() {
                             </div>
                         </div>
                     </div>
-
-                    {/* footer */}
-                    <div className='w-full lg:h-[40px] lg:gap-0 gap-2 sm:py-[15px] py-[10px] flex items-center justify-between lg:flex-row flex-col sm:fixed bottom-0'>
-                        <div className='flex items-center gap-4 divide-x-[1px] divide-[#8E8585]'>
-                            <span className='text-[#8E8585] sm:text-[14px] text-[9px] sm:px-[25px] px-[8px]'>TERMS OF USE</span>
-                            <span className='text-[#8E8585] sm:text-[14px] text-[9px] sm:px-[25px] px-[8px]'>ABOUT US</span>
-                            <span className='text-[#8E8585] sm:text-[14px] text-[9px] sm:px-[25px] px-[8px]'>DISCLAIMER</span>
-                            <span className='text-[#8E8585] sm:text-[14px] text-[9px] sm:px-[25px] px-[8px]'>CONTACT US</span>
-                        </div>
-                        <div className='sm:pr-[25px]'>
-                            <span className='text-[#8E8585] sm:text-[14px] text-[9px] sm:pl-[25px]'>© 2022 ROBIN. All Rights Reserved.</span>
-                        </div>
-                    </div>
+                </div>
+            </div>
+            {/* footer */}
+            <div className='w-full lg:h-[40px] lg:gap-0 gap-2 sm:pb-[15px] pb-[10px] flex items-center justify-between lg:flex-row flex-col'>
+                <div className='flex items-center gap-4 divide-x-[1px] divide-[#8E8585]'>
+                    <span className='text-[#8E8585] sm:text-[14px] text-[9px] sm:px-[25px] px-[8px]'>TERMS OF USE</span>
+                    <span className='text-[#8E8585] sm:text-[14px] text-[9px] sm:px-[25px] px-[8px]'>ABOUT US</span>
+                    <span className='text-[#8E8585] sm:text-[14px] text-[9px] sm:px-[25px] px-[8px]'>DISCLAIMER</span>
+                    <span className='text-[#8E8585] sm:text-[14px] text-[9px] sm:px-[25px] px-[8px]'>CONTACT US</span>
+                </div>
+                <div className='sm:pr-[25px]'>
+                    <span className='text-[#8E8585] sm:text-[14px] text-[9px] sm:pl-[25px]'>© 2022 ROBIN. All Rights Reserved.</span>
                 </div>
             </div>
         </div>
