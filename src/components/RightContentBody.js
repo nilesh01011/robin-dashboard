@@ -95,10 +95,10 @@ function RightContentBody({ theme }) {
                             <MdOutlineArrowForwardIos className={`${isOpens ? 'rotate-[270deg] transition-all' : 'rotate-[90deg] transition-all'}`} size={20} />
                         </div>
                         {/* contents body */}
-                        <div className='w-auto h-max flex flex-col items-start gap-[20px] overflow-auto'>
+                        <div className='w-full h-auto flex flex-col items-start gap-[20px] overflow-auto'>
                             {
                                 isOpens &&
-                                <div key={news[currentNews].id} className='w-[290px] text-left mt-[12px] flex flex-col h-full transition-all duration-1000'>
+                                <div key={news[currentNews].id} className='w-auto h-auto text-left mt-[12px] flex flex-col'>
                                     <div className='w-full'>
                                         <span className='text-[14px] font-bold'>{news[currentNews].title}</span>
                                     </div>

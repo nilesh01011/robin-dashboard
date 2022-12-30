@@ -207,7 +207,7 @@ export const news = [
     {
         id: 2,
         title: '28th June 2021 - Competitor Watch',
-        description: 'Short description goes here lorem ipsum lorem lorem'
+        description: 'Short description goes here lorem ipsum lorem..'
     },
     {
         id: 3,

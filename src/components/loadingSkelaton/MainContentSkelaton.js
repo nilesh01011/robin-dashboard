@@ -5,7 +5,7 @@ import 'react-loading-skeleton/dist/skeleton.css'
 function MainContentSkelaton({ theme }) {
     return (
         <>
-            <div className={`w-full h-max ${theme === 'dark' ? 'text-white' : 'text-black'} xs:pl-[20px] xs:pr-[20px] px-[10px] mb-[25px]`}>
+            <div className={`w-full h-max ${theme === 'dark' ? 'text-white' : 'text-black'} xs:pl-[20px] xs:pr-[20px] px-[10px] mb-[25px] -z-[1]`}>
                 {/* top navbar */}
                 <div className='max-h-[70px] py-[17px] flex items-center justify-end'>
                     <div className='flex items-center gap-6'>

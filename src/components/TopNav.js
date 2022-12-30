@@ -20,7 +20,7 @@ function TopNav({ theme }) {
                             <img src={`${theme === 'dark' ? './images/B_dark_theme.svg' : './images/B_Light_theme.svg'}`} className='h-full mr-auto' alt='robin-logo' />
                         </div>
                         {/* icons */}
-                        <AiOutlineLeft size={16} className={`${isOpen ? `${theme === 'dark' ? 'text-white' : 'text-black'}` : 'text-[#FF3E5B]'} rotate-180`} />
+                        <AiOutlineLeft size={16} className={`${theme === 'dark' ? 'text-white' : 'text-black'} rotate-180`} />
                     </button>
                 </div>
                 <div className='flex items-center gap-6'>
