@@ -7,7 +7,7 @@ function NavTabs({ isOpen, theme }) {
 
     return (
         <>
-            <div className={`flex flex-col mt-3 gap-[4px] mb-6 z-10 relative`}>
+            <div className={`flex flex-col mt-3 1x1:gap-[8px] gap-[6px] mb-6 z-10 relative`}>
                 {
                     dashboardNavTabs.map((ele) => (
                         <button key={ele.id} type='button' className={`flex flex-col ${isOpen ? 'justify-center' : 'justify-between'} items-center w-full mb-[4px] relative`}>
