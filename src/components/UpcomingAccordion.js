@@ -8,7 +8,7 @@ function UpcomingAccordion({ title, description, id, theme }) {
             {
                 <div onClick={() => setShow(!show)} className={`items w-full overflow-hidden ${show ? 'h-max' : 'h-[34px]'} py-[10px] ${id === 3 && 'pb-0'}`}>
                     <div className={`w-[90%] flex items-center justify-between cursor-pointer`}>
-                        <span className={`${theme === 'dark' ? 'text-white' : 'text-dark'} text-[14px] select-none`}>{title}</span>
+                        <span className={`${theme === 'dark' ? `${show ? 'text-[#FF3E5B]' : 'text-white'}` : 'text-dark'} text-[14px] select-none`}>{title}</span>
                         <MdOutlineArrowForwardIos className={`${show ? 'rotate-[270deg] transition-all' : 'rotate-[90deg] transition-all'}`} size={15} />
                     </div>
                     {

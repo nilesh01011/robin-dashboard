@@ -198,6 +198,24 @@ export const carouselNewsContent = [
 
 // right side Upcomming training
 
+export const news = [
+    {
+        id: 1,
+        title: '27th June 2021 - Competitor Watch',
+        description: 'Short description goes here lorem ipsum..'
+    },
+    {
+        id: 2,
+        title: '28th June 2021 - Competitor Watch',
+        description: 'Short description goes here lorem ipsum lorem lorem'
+    },
+    {
+        id: 3,
+        title: '29th June 2021 - Competitor Watch',
+        description: 'Short description goes here lorem ipsum lorem'
+    },
+]
+
 export const upCommingTraining = [
     {
         id: 1,

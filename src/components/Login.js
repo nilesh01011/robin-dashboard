@@ -159,7 +159,7 @@ function Login() {
                                         {/* button */}
 
                                         <div className='w-full h-full flex flex-col justify-center items-center'>
-                                            <button className='rounded bg-[#FF3E5B] text-whiet w-full h-[45px] text-white'>Login</button>
+                                            <button className='rounded bg-[#FF3E5B] text-whiet w-full 1x1:h-[50px] h-[45px] text-white'>Login</button>
                                             {/* forget password */}
                                             <button className='rounded mt-3 font-light text-whiet w-max text-white text-center' type='button'>Forgot password?</button>
                                         </div>
