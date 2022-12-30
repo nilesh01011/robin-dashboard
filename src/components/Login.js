@@ -48,39 +48,34 @@ function Login() {
     };
 
     return (
-        <div className='h-screen w-full flex flex-col relative overflow-hidden bg-no-repeat bg-cover pt-[20px]' style={{ backgroundImage: 'url("./images/mainbg.png")' }}>
+        <div className='h-screen w-full flex flex-col relative overflow-hidden bg-no-repeat bg-cover' style={{ backgroundImage: 'url("./images/mainbg.png")' }}>
 
-            {/* logo images */}
-            <div className='w-full h-[20px] flex lg:justify-end justify-center lg:pr-[25px]'>
-                <img src='./images/logo.png' className='h-full lg:w-[160px] w-[140px]' alt='logo-images' />
+            <div className='w-full flex flex-col lg:pt-[20px] pt-[40px]'>
+                {/* logo images */}
+                <div className='w-full h-[20px] flex lg:justify-end justify-center lg:pr-[25px]'>
+                    <img src='./images/logo.png' className='h-full lg:w-[160px] w-[140px]' alt='logo-images' />
+                </div>
+                {/* robin logo and content*/}
+                <div className='h-max flex flex-col items-center mb-7 mt-6'>
+                    {/* robin logo */}
+                    <div className='h-max flex flex-col items-center justify-center'>
+                        <img src='./images/RobinDark_theme.svg' className='1x1:h-[80px] h-[60px] sm:w-[245px] w-[100px]' alt='robin-images' />
+                        <img src='./images/Line.png' className='h-[1px] w-[300px] mt-1 mb-3' alt='line-images' />
+                    </div>
+                    {/* content */}
+                    <div>
+                        <h2 className='text-white 1x1:text-[24px] sm:text-[20px] text-[16px]'>Dealer Management System</h2>
+                    </div>
+                </div>
             </div>
             {/* display contents */}
-            <div className='w-full sm:h-[90%] h-full sm:mt-0 mt-8 flex flex-col justify-center gap-[10px] z-20 relative'>
+            <div className='w-full xs:h-[60%] h-max flex flex-col justify-center gap-[10px] z-20 relative'>
                 {/* main contents */}
-                <div className='h-full flex flex-col justify-center'>
-                    {/* robin logo and content*/}
-                    <div className='h-max flex flex-col items-center mb-7 sm:mt-6'>
-                        {/* robin logo */}
-                        <div className='h-max flex flex-col items-center justify-center'>
-                            <img src='./images/RobinDark_theme.svg' className='1x1:h-[80px] h-[60px] w-[245px]' alt='robin-images' />
-                            {/* <div className='w-auto h-[80px] flex items-center gap-[1px] justify-center'>
-                                <img src='./images/R.svg' className={`transition-all 1x1:h-[60px] h-[30px] w-[28px]`} alt='logo-images' />
-                                <img src='./images/O.svg' className={`transition-all 1x1:h-[70px] h-[30px] w-[30px] mx-[1px]`} alt='logo-images' />
-                                <img src='./images/B_dark_theme.svg' className='1x1:h-[75px] h-[30px] w-[25px]' alt='logo-images' />
-                                <img src='./images/i.svg' className={`transition-all 1x1:h-[40px] h-[30px] w-[15px]`} alt='logo-images' />
-                                <img src='./images/N.svg' className={`transition-all 1x1:h-[60px] h-[30px] w-[30px]`} alt='logo-images' />
-                            </div> */}
-                            <img src='./images/Line.png' className='h-[1px] w-[300px] mt-1 mb-3' alt='line-images' />
-                        </div>
-                        {/* content */}
-                        <div>
-                            <h2 className='text-white 1x1:text-[24px] text-[20px]'>Dealer Management System</h2>
-                        </div>
-                    </div>
+                <div className='h-max flex flex-col justify-center'>
                     {/* login content */}
                     <div className='flex flex-col'>
                         <div className='w-full h-max flex items-center justify-center'>
-                            <div className='2xl:w-[420px] lg:w-[380px] sm:w-[360px] w-[320px] h-max rounded-2xl bg-[rgba(40,39,44,0.8)] sm:py-[15px] py-[10px] px-[25px] mb-3'>
+                            <div className='2xl:w-[420px] lg:w-[380px] sm:w-[360px] w-[320px] h-max rounded-2xl bg-[rgba(40,39,44,0.8)] sm:py-[15px] py-[10px] px-[25px]'>
                                 <div className='flex flex-col items-center sm:gap-[8px] gap-[5px]'>
                                     <h1 className='font-bold xl:text-[26px] text-[20px] text-white'>Welcome!</h1>
                                     <p className='text-[#DEDEDE] xl:text-[14px] text-[12px] font-[400]'>Please enter your credentials to login</p>
@@ -177,7 +172,7 @@ function Login() {
                 </div>
             </div>
             {/* footer */}
-            <div className='w-full lg:h-[40px] lg:gap-0 gap-2 sm:pb-[15px] pb-[10px] flex items-center justify-between lg:flex-row flex-col'>
+            <div className='w-full lg:h-[40px] lg:gap-0 gap-2 sm:pb-[15px] pb-[10px] flex items-center justify-between lg:flex-row flex-col fixed bottom-0'>
                 <div className='flex items-center gap-4 divide-x-[1px] divide-[#8E8585]'>
                     <span className='text-[#8E8585] sm:text-[14px] text-[9px] sm:px-[25px] px-[8px]'>TERMS OF USE</span>
                     <span className='text-[#8E8585] sm:text-[14px] text-[9px] sm:px-[25px] px-[8px]'>ABOUT US</span>

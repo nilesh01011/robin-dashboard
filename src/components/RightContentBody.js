@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { MdAccessTimeFilled, MdOutlineArrowForwardIos } from 'react-icons/md'
 import { upCommingTraining } from '../Data'
 import UpcomingAccordion from './UpcomingAccordion'
+import UpcomingAccordions from './UpcomingAccordions'
 // import Carousel from './Carousel'
 
 function RightContentBody({ theme }) {
@@ -10,6 +11,7 @@ function RightContentBody({ theme }) {
     const [isOpen_1, setIsOpen_1] = useState(true)
     const [isOpen_2, setIsOpen_2] = useState(false)
     const [isOpen_3, setIsOpen_3] = useState(false)
+    const [isOpen_4, setIsOpen_4] = useState(false)
 
     const [data, setData] = useState(upCommingTraining);
 
@@ -203,6 +205,38 @@ function RightContentBody({ theme }) {
                                 </div>
                             </div>
                         }
+                    </div>
+
+                    {/* box 6 */}
+                    <div className={`rounded-md w-full ${isOpen_4 ? 'h-max' : 'h-[50px]'} overflow-hidden ${changeTheme} flex flex-col items-center p-[16px] pt-[14px] shadow-[0_0_3px_rgba(0,0,0,0.2)]`}>
+                        <div onClick={() => setIsOpen_4(!isOpen_4)} className='w-full flex items-center justify-between cursor-pointer'>
+                            <div className='w-full flex items-center gap-[5px]'>
+                                {/* icons */}
+                                <div className=''>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none">
+                                        <path d="M21.1595 7.25961L19.7495 5.84961L16.1895 9.39961L17.5995 10.8096C17.5995 10.8096 21.0495 7.28961 21.1595 7.25961Z" fill={`${theme === 'dark' ? '#fff' : '#000'}`} />
+                                        <path d="M13 3H11V8H13V3Z" fill={`${theme === 'dark' ? '#fff' : '#000'}`} />
+                                        <path d="M6.39984 10.8098L7.80984 9.39984L4.25984 5.83984L2.83984 7.25984C2.94984 7.28984 6.39984 10.8098 6.39984 10.8098Z" fill={`${theme === 'dark' ? '#fff' : '#000'}`} />
+                                        <path d="M20 12H15C15 12.7956 14.6839 13.5587 14.1213 14.1213C13.5587 14.6839 12.7956 15 12 15C11.2044 15 10.4413 14.6839 9.87868 14.1213C9.31607 13.5587 9 12.7956 9 12H4C3.47005 12.0016 2.96227 12.2128 2.58753 12.5875C2.2128 12.9623 2.00158 13.4701 2 14L2 19C2.00158 19.5299 2.2128 20.0377 2.58753 20.4125C2.96227 20.7872 3.47005 20.9984 4 21H20C20.5299 20.9984 21.0377 20.7872 21.4125 20.4125C21.7872 20.0377 21.9984 19.5299 22 19V14C21.9984 13.4701 21.7872 12.9623 21.4125 12.5875C21.0377 12.2128 20.5299 12.0016 20 12V12Z" fill={`${theme === 'dark' ? '#fff' : '#000'}`} />
+                                    </svg>
+                                </div>
+                                {/* text */}
+                                <span className='font-bold text-[16px] select-none'>Upcoming Training</span>
+                            </div>
+                            {/* icons */}
+
+                            <MdOutlineArrowForwardIos className={`${isOpen_4 ? 'rotate-[270deg] transition-all' : 'rotate-[90deg] transition-all'}`} size={20} />
+                        </div>
+                        {/* contents body */}
+                        <div className={`w-full text-left mt-[7px] flex flex-col gap-[8px] h-full divide-y-[1px] ${theme === 'dark' ? 'divide-[#8E8585]' : 'divide-[#DEDEDE]'}`}>
+
+                            {
+                                data.map((ele) => {
+                                    const { id } = ele;
+                                    return <UpcomingAccordions key={id} {...ele} theme={theme} />
+                                })
+                            }
+                        </div>
                     </div>
                 </div>
 

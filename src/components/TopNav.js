@@ -14,9 +14,9 @@ function TopNav({ theme }) {
         <>
             <div className='w-full h-max flex items-baseline slg:justify-end justify-between py-[17px]'>
                 {/* mobile view icons */}
-                <div className='w-max slg:hidden block'>
+                <div className='w-max h-full slg:hidden block'>
                     <button onClick={() => handleNavbar()} type='button' className='flex items-center gap-1'>
-                        <div className='w-[15px] h-[29px] flex items-start transition-all duration-300 relative left-[4px]'>
+                        <div className='w-[15px] h-[30px] flex items-start transition-all duration-300 relative left-[4px]'>
                             <img src={`${theme === 'dark' ? './images/B_dark_theme.svg' : './images/B_Light_theme.svg'}`} className='h-full mr-auto' alt='robin-logo' />
                         </div>
                         {/* icons */}

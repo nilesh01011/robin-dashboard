@@ -16,11 +16,11 @@ function DesktopSidebar({ theme, handleTheme }) {
                             {
                                 isOpen ?
                                     (
-                                        <div className='w-[15px] h-[34px] flex items-start transition-all duration-300 relative left-[4px]'>
+                                        <div className='w-[15px] h-[36px] flex items-start transition-all duration-300 relative left-[4px]'>
                                             <img src={`${theme === 'dark' ? './images/B_dark_theme.svg' : './images/B_Light_theme.svg'}`} className='h-full mr-auto' alt='robin-logo' />
                                         </div>
                                     ) : (
-                                        <div className='h-[34px] flex items-start'>
+                                        <div className='h-[36px] flex items-start'>
                                             <img src={`${theme === 'dark' ? './images/RobinDark_theme.svg' : './images/RobinLightTheme.svg'}`} className='h-full mr-auto' alt='robin-logo' />
                                         </div>
                                     )
