@@ -46,7 +46,7 @@ export const dashboardNavTabs = [
     {
         id: 4,
         title: 'PARTS',
-        icons: <FaShapes size={21} />,
+        icons: <FaShapes size={20} />,
     },
     {
         id: 5,
