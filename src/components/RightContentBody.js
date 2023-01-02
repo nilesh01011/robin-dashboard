@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { MdAccessTimeFilled, MdOutlineArrowForwardIos } from 'react-icons/md'
 import { news, upCommingTraining } from '../Data'
-import NewsContent from './NewsContent'
+// import NewsContent from './NewsContent'
 import UpcomingAccordion from './UpcomingAccordion'
 // import Carousel from './Carousel'
 
@@ -12,6 +12,7 @@ function RightContentBody({ theme }) {
     const [isOpen_2, setIsOpen_2] = useState(false)
     const [isOpen_3, setIsOpen_3] = useState(false)
 
+    // eslint-disable-next-line no-unused-vars
     const [data, setData] = useState(upCommingTraining);
 
     const changeTheme = theme === 'dark' ? 'bg-[#242424]' : 'bg-white';

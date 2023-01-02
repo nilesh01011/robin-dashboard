@@ -1,7 +1,7 @@
+/* eslint-disable array-callback-return */
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import { FiLock, FiMail } from 'react-icons/fi'
-import { MdRefresh } from 'react-icons/md'
 import { BiError } from 'react-icons/bi'
 import { userdata } from '../UserData';
 
@@ -9,8 +9,11 @@ function Login() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [captcha, setCaptcha] = useState('');
+    // eslint-disable-next-line no-unused-vars
     const [error, setError] = useState(false);
+    // eslint-disable-next-line no-unused-vars
     const [errorCaptcha, setErrorCaptcha] = useState(false);
+    // eslint-disable-next-line no-unused-vars
     const captchaCode = 'XDQA5K';
     const navigate = useNavigate();
 
@@ -45,10 +48,10 @@ function Login() {
         })
 
         console.log(fetchData)
-    };
+    }
 
     return (
-        <div className='h-screen w-full flex flex-col relative overflow-hidden bg-no-repeat bg-cover' style={{ backgroundImage: 'url("./images/mainbg.png")' }}>
+        <div id='login' className={`h-screen w-full flex flex-col relative overflow-hidden bg-no-repeat bg-cover`} style={{ backgroundImage: 'url("./images/mainbg.png")' }}>
 
             <div className='w-full flex flex-col lg:pt-[20px] pt-[40px]'>
                 {/* logo images */}
@@ -56,7 +59,7 @@ function Login() {
                     <img src='./images/logo.png' className='h-full lg:w-[160px] w-[140px]' alt='logo-images' />
                 </div>
                 {/* robin logo and content*/}
-                <div className='h-max flex flex-col items-center mb-7 mt-6'>
+                <div className='h-max flex flex-col items-center mb-7 1x1:mt-6 mt-4'>
                     {/* robin logo */}
                     <div className='h-max flex flex-col items-center justify-center'>
                         <img src='./images/RobinDark_theme.svg' className='1x1:h-[70px] h-[60px] sm:w-[245px] w-[100px]' alt='robin-images' />

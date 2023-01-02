@@ -24,3 +24,15 @@ button {
   border: none;
   outline: none;
 }
+
+@media screen and (max-width: 1038px) {
+  #login {
+    background-image: url('../public/images/iPad_BG.png') !important;
+  }
+}
+
+@media screen and (max-width: 756px) {
+  #login {
+    background-image: url('../public/images/iPhone_BG.png') !important;
+  }
+}

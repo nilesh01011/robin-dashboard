@@ -4,7 +4,7 @@ import { BiUserPin } from 'react-icons/bi';
 import { FaShapes } from 'react-icons/fa';
 import { HiCurrencyRupee, HiUsers } from 'react-icons/hi';
 import { MdAdminPanelSettings, MdStars } from 'react-icons/md';
-import { dashboardNavTabs } from '../Data'
+// import { dashboardNavTabs } from '../Data'
 
 function NavTabs({ isOpen, theme }) {
     const [submenu, setSubmenu] = useState(false);
