@@ -125,7 +125,7 @@ function Login() {
                                             <div onClick={() => setShowPassword(!showPassword)} className='absolute right-2 top-1 cursor-pointer'>
                                                 {
                                                     !showPassword ?
-                                                        <AiOutlineEyeInvisible className='text-white' size={18} />
+                                                        <AiOutlineEyeInvisible className='text-[#DEDEDE]' size={18} />
                                                         : <AiOutlineEye className='text-white' size={18} />
                                                 }
                                             </div>
