@@ -65,9 +65,9 @@ function Login() {
             {/* 1x1:mt-6 mt-4 */}
             <div className='h-max flex flex-col items-center mb-7 xs:mt-6 mt-3'>
                 {/* robin logo */}
-                <div className='h-max flex flex-col items-center justify-center'>
-                    <img src='./images/RobinDark_theme.svg' className='1x1:h-[70px] h-[60px] sm:w-[245px] w-[100px]' alt='robin-images' />
-                    <img src='./images/Line.png' className='h-[1px] w-[300px] mt-1 mb-3' alt='line-images' />
+                <div className='h-max flex flex-col items-center justify-center lg:gap-6 gap-3'>
+                    <img src='./images/RobinDark_theme.svg' className='h-[55px] sm:w-[245px] w-[100px]' alt='robin-images' />
+                    <img src='./images/Line.png' className='h-[1px] w-[300px] mb-3' alt='line-images' />
                 </div>
                 {/* content */}
                 <div>
