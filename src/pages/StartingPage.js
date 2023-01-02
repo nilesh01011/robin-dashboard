@@ -12,8 +12,7 @@ function StartingPage() {
             setIsLoading(false)
             navigate('/login')
         }, 5000)
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [])
+    }, [navigate])
     return (
         <>
             {

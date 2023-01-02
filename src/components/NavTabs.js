@@ -9,6 +9,40 @@ import { MdAdminPanelSettings, MdStars } from 'react-icons/md';
 function NavTabs({ isOpen, theme }) {
     const [submenu, setSubmenu] = useState(false);
 
+    const SubMenuList = [
+        {
+            id: 1,
+            list: 'Dashboard',
+            active: 'true'
+        },
+        {
+            id: 2,
+            list: 'Terms and Conditions',
+            active: ''
+        },
+        {
+            id: 3,
+            list: 'Manufacturer Hierarchy',
+            active: ''
+        },
+        {
+            id: 4,
+            list: 'Customer Master',
+            active: ''
+        }
+    ]
+
+    const [activeTabs, setActiveTabs] = useState(false)
+
+    const handleTabs = (id) => {
+
+        SubMenuList.map((ele) => {
+            if (id === ele.id) {
+                setActiveTabs(ele.id)
+            }
+        })
+    }
+
     return (
         <>
             <div className={`flex flex-col mt-3 1x1:gap-[8px] gap-[6px] mb-6 z-10 relative`}>
@@ -66,10 +100,17 @@ function NavTabs({ isOpen, theme }) {
                             (
                                 <>
                                     <ul className='w-full'>
-                                        <li className={`w-auto whitespace-nowrap ${isOpen && 'text-[#FF3E5B]'} ${theme === 'dark' ? `text-white hover:bg-[#0B0B0C] bg-[#0B0B0C]` : `text-[#342C2C] hover:bg-white bg-white`} text-left pl-[30px] rounded py-[5px] lg:text-[13px] text-[11px]`}>Dashboard</li>
-                                        <li className={`w-auto whitespace-nowrap ${isOpen && 'text-[#FF3E5B]'} ${theme === 'dark' ? `text-white hover:bg-[#0B0B0C]` : `text-[#342C2C] hover:bg-white`} text-left pl-[30px] rounded py-[5px] lg:text-[13px] text-[11px]`}>Terms and Conditions</li>
-                                        <li className={`w-auto whitespace-nowrap ${isOpen && 'text-[#FF3E5B]'} ${theme === 'dark' ? `text-white hover:bg-[#0B0B0C]` : `text-[#342C2C] hover:bg-white`} text-left pl-[30px] rounded py-[5px] lg:text-[13px] text-[11px]`}>Manufacturer Hierarchy</li>
-                                        <li className={`w-auto whitespace-nowrap ${isOpen && 'text-[#FF3E5B]'} ${theme === 'dark' ? `text-white hover:bg-[#0B0B0C]` : `text-[#342C2C] hover:bg-white`} text-left pl-[30px] rounded py-[5px] lg:text-[13px] text-[11px]`}>Customer Master</li>
+                                        {/* <li className={`w-auto whitespace-nowrap ${theme === 'dark' ? `hover:bg-[#0B0B0C] bg-[#0B0B0C]` : `hover:bg-white bg-white`} text-[#FF3E5B] text-left pl-[30px] rounded py-[5px] lg:text-[14px] text-[12px]`}>Dashboard</li>
+                                        <li className={`w-auto whitespace-nowrap ${theme === 'dark' ? `text-white hover:bg-[#0B0B0C]` : `text-[#342C2C] hover:bg-white`} text-left pl-[30px] rounded py-[5px] lg:text-[14px] text-[12px]`}>Terms and Conditions</li>
+                                        <li className={`w-auto whitespace-nowrap ${theme === 'dark' ? `text-white hover:bg-[#0B0B0C]` : `text-[#342C2C] hover:bg-white`} text-left pl-[30px] rounded py-[5px] lg:text-[14px] text-[12px]`}>Manufacturer Hierarchy</li>
+                                        <li className={`w-auto whitespace-nowrap ${theme === 'dark' ? `text-white hover:bg-[#0B0B0C]` : `text-[#342C2C] hover:bg-white`} text-left pl-[30px] rounded py-[5px] lg:text-[14px] text-[12px]`}>Customer Master</li> */}
+                                        {
+                                            SubMenuList.map((ele) => {
+                                                return (
+                                                    <li onClick={() => handleTabs(ele.id)} key={ele.id} className={`w-auto whitespace-nowrap ${ele.active === "true" ? `text-[#FF3E5B] ${theme === 'dark' ? 'bg-[#0B0B0C]' : 'bg-white'}` : `${theme === 'dark' ? 'text-white hover:bg-[#0B0B0C]' : 'text-[#342C2C] hover:bg-white'}`} text-left pl-[30px] rounded py-[5px] lg:text-[14px] text-[12px]`}>{ele.list}</li>
+                                                )
+                                            })
+                                        }
                                     </ul>
                                 </>
                             )

@@ -12,7 +12,7 @@ function TopNav({ theme }) {
     }
     return (
         <>
-            <div className='w-full h-max flex items-baseline slg:justify-end justify-between py-[17px]'>
+            <div className='w-full h-max flex items-baseline slg:justify-end justify-between py-[13px]'>
                 {/* mobile view icons */}
                 <div className='w-max h-full slg:hidden block'>
                     <button onClick={() => handleNavbar()} type='button' className='flex items-center gap-1'>

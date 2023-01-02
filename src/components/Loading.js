@@ -18,12 +18,12 @@ function Loading() {
                     </div>
                     {/* loading animations */}
                     <div className='w-full h-full flex items-center justify-center'>
-                        <div className='w-[400px] h-[80px] flex items-center gap-1 justify-center'>
-                            <img src='./images/R.svg' className={`${isLoading ? 'opacity-1' : 'opacity-0'} transition-all h-[50px] w-[35px]`} alt='logo-images' />
-                            <img src='./images/O.svg' className={`${isLoading ? 'opacity-1' : 'opacity-0'} transition-all h-[50px] w-[35px]`} alt='logo-images' />
-                            <img src='./images/B_dark_theme.svg' className='h-[55px] w-[30px]' alt='logo-images' />
-                            <img src='./images/i.svg' className={`${isLoading ? 'opacity-1' : 'opacity-0'} transition-all h-[45px] w-[15px]`} alt='logo-images' />
-                            <img src='./images/N.svg' className={`${isLoading ? 'opacity-1' : 'opacity-0'} transition-all h-[45px] w-[35px]`} alt='logo-images' />
+                        <div className='w-[400px] h-[80px] flex items-baseline justify-center'>
+                            <img src='./images/R.svg' className={`${isLoading ? 'opacity-1' : 'opacity-0'} duration-400 transition-all h-[49px] w-[35px] mr-[0.25rem]`} alt='logo-images' />
+                            <img src='./images/O.svg' className={`${isLoading ? 'opacity-1' : 'opacity-0'} duration-1000 transition-opacity h-[49px] w-[38px]`} alt='logo-images' />
+                            <img src='./images/B_dark_theme.svg' className='h-[57px] w-[37px]' alt='logo-images' />
+                            <img src='./images/i.svg' className={`${isLoading ? 'opacity-1' : 'opacity-0'} duration-[1500ms] transition-all h-[47px] w-[16px] mx-[0.25rem]`} alt='logo-images' />
+                            <img src='./images/N.svg' className={`${isLoading ? 'opacity-1' : 'opacity-0'} duration-[2000ms] transition-all h-[47px] w-[35px]`} alt='logo-images' />
                         </div>
                     </div>
                     {/* bottom logo */}
