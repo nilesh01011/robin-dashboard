@@ -167,31 +167,35 @@ function BoxContent({ title, icons, counterBox, theme }) {
                 </div>
 
                 {/* content */}
-                <div className={`${changeBodyTheme} slg:h-[75%] h-max py-[1rem] flex items-center divide-x-[1px] rounded-b-lg`}>
-                    <div className='w-full flex flex-col items-center justify-center slg:px-[2rem] px-[15px] h-full'>
-                        <h1 className={`font-bold slg:text-[34px] xs:text-[24px] text-[16px]`}>
-                            24
-                        </h1>
-                        <h6 className='font-[400] sm:text-[12px] text-[10px] text-center'>Hot Enquiries (MTD)</h6>
-                        <h6 className='font-[400] xs:text-[12px] text-[10px] text-center whitespace-nowrap'>
-                            (MTD Rs. Lakhs)
-                        </h6>
-                    </div>
-                    <div className='w-full flex flex-col items-center justify-center slg:px-[2rem] px-[15px] h-full'>
-                        <h1 className='font-bold slg:text-[34px] xs:text-[24px] text-[16px]'>
+                <div className={`${changeBodyTheme} slg:h-[75%] h-max py-[1rem] grid sm:grid-cols-4 grid-cols-3 items-center rounded-b-lg relative overflow-hidden`}>
+                    {/* divide-x-[1px] */}
+                    <div className={`w-full flex flex-col items-center justify-center slg:px-[2rem] px-[15px] h-full border-r-[1px] border-[#DEDEDE]`}>
+                        <h1 className={`font-bold slg:text-[34px] xs:text-[24px] text-[16px] text-[#FF3E5B]`}>
                             12
                         </h1>
-                        <h6 className='font-[400] sm:text-[12px] text-[10px] text-center'>Vehicle Retail (MTD)</h6>
+                        <h6 className='font-[400] sm:text-[12px] text-[10px] text-center'>Pending Complaints</h6>
+                    </div>
+                    <div className='w-full flex flex-col items-center justify-center slg:px-[2rem] px-[15px] h-full border-r-[1px] border-[#DEDEDE]'>
+                        <h1 className='font-bold slg:text-[34px] xs:text-[24px] text-[16px]'>
+                            1.2
+                        </h1>
                         <h6 className='font-[400] xs:text-[12px] text-[10px] text-center whitespace-nowrap'>
-                            (MTD Rs. Lakhs)
+                            CSI (%)
                         </h6>
                     </div>
-                    <div className='w-full flex flex-col items-center justify-center slg:px-[2rem] px-[15px] h-full'>
-                        <h1 className='font-bold slg:text-[34px] xs:text-[24px] text-[16px]'>5</h1>
-                        <h6 className='font-[400] xs:text-[12px] text-[10px] text-center whitespace-nowrap'>Opening Vehicle Stock</h6>
-                        <h6 className='font-[400] xs:text-[12px] text-[10px] text-center whitespace-nowrap'>
-                            (Landed) (Rs. Lakhs)
-                        </h6>
+                    <div className='w-full flex flex-col items-center justify-center slg:px-[2rem] px-[15px] h-full sm:border-r-[1px] sm:border-[#DEDEDE]'>
+                        <h1 className='font-bold slg:text-[34px] xs:text-[24px] text-[16px]'>4.2</h1>
+                        <h6 className='font-[400] xs:text-[12px] text-[10px] text-center whitespace-nowrap'>SSI (%)</h6>
+                    </div>
+                    {/* hr lines */}
+                    <div className='w-full h-full sm:hidden block absolute top-[52%]'>
+                        <span className='w-[90%] mx-auto h-[1px] bg-[#DEDEDE] block'></span>
+                    </div>
+                    <div className='w-full flex flex-col items-center justify-center slg:px-[2rem] px-[15px] h-full sm:pt-0 pt-6'>
+                        <h1 className={`font-bold slg:text-[34px] xs:text-[24px] text-[16px] text-[#FF3E5B]`}>
+                            15
+                        </h1>
+                        <h6 className='font-[400] sm:text-[12px] text-[10px] text-center'>Follow ups for the Day</h6>
                     </div>
                 </div>
             </div>

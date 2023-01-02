@@ -82,7 +82,7 @@ function Login() {
                     <div className='flex flex-col'>
                         <div className='w-full h-max flex items-center justify-center'>
                             {/* sm:w-[360px] w-[320px] */}
-                            <div className='1x1:w-[420px] sm:w-[360px] w-[320px] 1x1:h-[420px] h-max rounded-2xl bg-[rgba(40,39,44,0.8)]  p-[25px]'>
+                            <div className='1x1:w-[420px] sm:w-[360px] w-[320px] h-max rounded-2xl bg-[rgba(40,39,44,0.8)]  p-[25px]'>
                                 {/* 1x1:py-[25px] sm:py-[15px] py-[10px] */}
                                 {/* gap-[5px] */}
                                 <div className='flex flex-col items-center gap-[8px]'>
@@ -191,10 +191,10 @@ function Login() {
             {/* footer */}
             <div className='w-full lg:h-[40px] lg:gap-0 gap-2 sm:pb-[15px] pb-[10px] flex items-center justify-between lg:flex-row flex-col 1x1:mt-3 lg:mt-0 md:mt-3'>
                 <div className='flex items-center gap-4 divide-x-[1px] divide-[#8E8585]'>
-                    <span className='text-[#8E8585] sm:text-[14px] text-[9px] sm:px-[25px] px-[8px]'>TERMS OF USE</span>
-                    <span className='text-[#8E8585] sm:text-[14px] text-[9px] sm:px-[25px] px-[8px]'>ABOUT US</span>
-                    <span className='text-[#8E8585] sm:text-[14px] text-[9px] sm:px-[25px] px-[8px]'>DISCLAIMER</span>
-                    <span className='text-[#8E8585] sm:text-[14px] text-[9px] sm:px-[25px] px-[8px]'>CONTACT US</span>
+                    <a href='#terms' className='text-[#8E8585] sm:text-[14px] text-[9px] sm:px-[25px] px-[8px] cursor-pointer'>TERMS OF USE</a>
+                    <a href='#about' className='text-[#8E8585] sm:text-[14px] text-[9px] sm:px-[25px] px-[8px] cursor-pointer'>ABOUT US</a>
+                    <a href='#disclaimer' className='text-[#8E8585] sm:text-[14px] text-[9px] sm:px-[25px] px-[8px] cursor-pointer'>DISCLAIMER</a>
+                    <a href='#contact' className='text-[#8E8585] sm:text-[14px] text-[9px] sm:px-[25px] px-[8px] cursor-pointer'>CONTACT US</a>
                 </div>
                 <div className='sm:pr-[25px]'>
                     <span className='text-[#8E8585] sm:text-[14px] text-[9px] sm:pl-[25px]'>© 2022 ROBIN. All Rights Reserved.</span>

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { AiFillCar, AiOutlineUp } from 'react-icons/ai'
 import { BiUserPin } from 'react-icons/bi';
+import { BsChevronDown } from 'react-icons/bs';
 import { FaShapes } from 'react-icons/fa';
 import { HiCurrencyRupee, HiUsers } from 'react-icons/hi';
 import { MdAdminPanelSettings, MdStars } from 'react-icons/md';
@@ -90,7 +91,7 @@ function NavTabs({ isOpen, theme }) {
                             <span className={`capitalize ${isOpen ? 'hidden' : 'transition-all'} lg:text-[16px] text-[14px] uppercase`}>FAVORITES</span>
                         </div>
                         {!isOpen && (
-                            <AiOutlineUp size={16} className={`text-[#FF3E5B] ${submenu && ('rotate-180 transition-all')} transition-all`} />
+                            <BsChevronDown size={18} className={`text-[#FF3E5B] ${submenu && ('rotate-180 transition-all')} transition-all`} />
                         )
                         }
                     </div>

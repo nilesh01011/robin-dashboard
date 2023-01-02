@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import { AiOutlineLeft, AiOutlineSearch } from 'react-icons/ai'
-import { BsMoon } from 'react-icons/bs'
+import { AiOutlineSearch } from 'react-icons/ai'
+import { BsChevronLeft, BsMoon } from 'react-icons/bs'
 import NavTabs from './NavTabs';
 
 function DesktopSidebar({ theme, handleTheme }) {
@@ -20,19 +20,19 @@ function DesktopSidebar({ theme, handleTheme }) {
                                             <img src={`${theme === 'dark' ? './images/B_dark_theme.svg' : './images/B_Light_theme.svg'}`} className='h-full mr-auto' alt='robin-logo' />
                                         </div>
                                     ) : (
-                                        <div className='h-[36px] flex items-start'>
+                                        <div className='h-[36px] flex items-center py-[5px]'>
                                             <img src={`${theme === 'dark' ? './images/RobinDark_theme.svg' : './images/RobinLightTheme.svg'}`} className='h-full mr-auto' alt='robin-logo' />
                                         </div>
                                     )
                             }
-                            <AiOutlineLeft size={16} className={`${isOpen ? `${theme === 'dark' ? 'text-white' : 'text-black'} rotate-180` : 'text-[#FF3E5B]'}  ${isOpen ? 'relative left-[4px]' : ''}`} />
+                            <BsChevronLeft size={18} className={`${isOpen ? `${theme === 'dark' ? 'text-white' : 'text-black'} rotate-180` : 'text-[#FF3E5B]'}  ${isOpen ? 'relative left-[4px]' : ''}`} />
                         </button>
                     </div>
                     {/* search boxs */}
-                    <div className={`w-full ${isOpen ? 'justify-center' : ''} h-[33px] flex items-end`}>
+                    <div className={`w-full ${isOpen ? 'justify-center' : ''} h-[34px] flex items-end`}>
                         {
                             isOpen ? (
-                                <AiOutlineSearch size={24} />
+                                <AiOutlineSearch size={25} />
 
                             ) : (
                                 <input className={`${theme === 'dark' ? 'bg-[#0B0B0C] text-white' : 'bg-white text-black'} w-full h-full text-[14px] placeholder:text-[#8E8585] p-[6px_12px] rounded ${isOpen && 'scale-0'}`} placeholder='Search menu..' style={{ border: `1px solid ${theme === 'dark' ? '#342C2C' : '#DEDEDE'}` }} />
