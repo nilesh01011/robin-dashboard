@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import ContentBody from './ContentBody'
-import MainContentSkelaton from './loadingSkelaton/MainContentSkelaton';
+import MainContentSkelaton from '../loadingSkelaton/MainContentSkelaton';
 import TopNav from './TopNav'
 
 function MainContent({ theme }) {

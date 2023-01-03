@@ -22,8 +22,8 @@ function Loading() {
                             <img src='./images/R.svg' className={`${isLoading ? 'opacity-1' : 'opacity-0'} duration-400 transition-all h-[49px] w-[35px] mr-[0.25rem]`} alt='logo-images' />
                             <img src='./images/O.svg' className={`${isLoading ? 'opacity-1' : 'opacity-0'} duration-1000 transition-opacity h-[49px] w-[38px]`} alt='logo-images' />
                             <img src='./images/B_dark_theme.svg' className='h-[57px] w-[37px]' alt='logo-images' />
-                            <img src='./images/i.svg' className={`${isLoading ? 'opacity-1' : 'opacity-0'} duration-[1500ms] transition-all h-[47px] w-[16px] mx-[0.25rem]`} alt='logo-images' />
-                            <img src='./images/N.svg' className={`${isLoading ? 'opacity-1' : 'opacity-0'} duration-[2000ms] transition-all h-[47px] w-[35px]`} alt='logo-images' />
+                            <img src='./images/i.svg' className={`${isLoading ? 'opacity-1' : 'opacity-0'} duration-[1700ms] transition-all h-[47px] w-[16px] mx-[0.25rem]`} alt='logo-images' />
+                            <img src='./images/N.svg' className={`${isLoading ? 'opacity-1' : 'opacity-0'} duration-[2300ms] transition-all h-[47px] w-[35px]`} alt='logo-images' />
                         </div>
                     </div>
                     {/* bottom logo */}

@@ -7,21 +7,21 @@ function StartingPage() {
     const navigate = useNavigate();
     const [isLoading, setIsLoading] = useState(true);
 
-    useEffect(() => {
-        setTimeout(() => {
-            setIsLoading(false)
-            navigate('/login')
-        }, 5000)
-    }, [navigate])
+    // useEffect(() => {
+    //     setTimeout(() => {
+    //         setIsLoading(false)
+    //         navigate('/login')
+    //     }, 5000)
+    // }, [navigate])
     return (
         <>
-            {
+            <Loading />
+            {/* {
                 isLoading ? (
-                    <Loading />
                 ) : (
                     <LoginPage />
                 )
-            }
+            } */}
         </>
     )
 }

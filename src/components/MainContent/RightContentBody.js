@@ -1,9 +1,7 @@
 import React, { useState } from 'react'
 import { MdAccessTimeFilled, MdOutlineArrowForwardIos } from 'react-icons/md'
-import { news, upCommingTraining } from '../Data'
-// import NewsContent from './NewsContent'
+import { news, upCommingTraining } from '../../Data'
 import UpcomingAccordion from './UpcomingAccordion'
-// import Carousel from './Carousel'
 
 function RightContentBody({ theme }) {
     const [isOpen, setIsOpen] = useState(true)
@@ -111,7 +109,7 @@ function RightContentBody({ theme }) {
                                     </div>
                                 </div>
                             }
-
+                            {/* paginations */}
                             <div className='w-full h-max flex items-center gap-[6px] justify-center'>
                                 {
                                     news.map((ele, index) => (
@@ -148,7 +146,7 @@ function RightContentBody({ theme }) {
                             {
                                 data.map((ele) => {
                                     const { id } = ele;
-                                    return <UpcomingAccordion key={id} {...ele} theme={theme} />
+                                    return <UpcomingAccordion key={id} onlyone={id} {...ele} theme={theme} />
                                 })
                             }
                         </div>
@@ -222,6 +220,7 @@ function RightContentBody({ theme }) {
                             </div>
                         }
                     </div>
+
                 </div>
 
             </div>

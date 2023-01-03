@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Footer from '../components/Footer';
-import MainContent from '../components/MainContent';
-import Navbar from '../components/Navbar';
+import MainContent from '../components/MainContent/MainContent';
+import Navbar from '../components/navbar/Navbar';
 
 
 function DashboardPage() {

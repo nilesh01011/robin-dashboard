@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { boxBodyContent } from '../Data'
+// import { boxBodyContent } from '../Data'
 import BoxContent from './BoxContent'
 
 function LeftContentBody({ theme }) {
