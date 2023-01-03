@@ -3,6 +3,15 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
+      keyframes: {
+        backgroundImage: {
+          'gradient-radial': 'radial-gradient(#FFFFFF 100%, #FFFFFF 0%)',
+        },
+        scaling: {
+          '0%, 50%': { transform: 'scale(0)' },
+          '100%': { transform: 'scale(1)' },
+        }
+      }
     },
     screens: {
 
