@@ -19,7 +19,6 @@ function DashboardPage() {
         document.querySelector('body').style.cssText = 'background: #0B0B0C; color:#DEDEDE;';
     }
 
-
     const handleTheme = () => {
         setSwitchTheme(!switchTheme);
 
@@ -29,7 +28,6 @@ function DashboardPage() {
             localStorage.setItem('theme', getTheme = 'light');
         }
     }
-
 
     return (
         <>

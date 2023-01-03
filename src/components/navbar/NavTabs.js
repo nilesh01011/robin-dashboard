@@ -87,7 +87,7 @@ function NavTabs({ isOpen, theme }) {
                         {!submenu && !isOpen &&
                             (
                                 <>
-                                    <ul className='w-full mt-[0.4rem]'>
+                                    <ul className='w-full mt-[0.4rem] flex flex-col gap-1'>
                                         {
                                             SubMenuList.map((ele) => {
                                                 return (
