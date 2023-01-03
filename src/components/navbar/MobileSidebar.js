@@ -12,12 +12,11 @@ function MobileSidebar({ theme, handleTheme }) {
     return (
         <>
             <nav id='navbars' className={`overflow-hidden z-[99999] w-full fixed top-0 -left-[150%] bottom-0 ${theme === 'dark' ? 'bg-[#242424]' : 'bg-[#F4F4F4]'} px-[14px] pt-[14px] flex flex-col justify-between select-none shadow-[0_0_3px_rgba(0,0,0,0.2)]`}>
-                {/* ${!isOpen ? 'transition-all duration-1000' : ''} */}
                 <div className='w-full'>
                     {/* buttons */}
                     {/* small sizes */}
                     <div className='slg:hidden block'>
-                        <button type='button' className='flex items-center justify-between w-full mb-[10px]'>
+                        <button type='button' className='flex items-center justify-between w-full mb-[1rem]'>
                             <div className='h-[34px] flex items-start'>
                                 <img src={`${theme === 'dark' ? './images/RobinDark_theme.svg' : './images/RobinLightTheme.svg'}`} className='h-full mr-auto' alt='robin-logo' />
                             </div>
@@ -29,7 +28,7 @@ function MobileSidebar({ theme, handleTheme }) {
                         </button>
                     </div>
                     {/* search boxs */}
-                    <div className={`w-full h-[33px] flex items-end`}>
+                    <div className={`w-full h-[36px] flex items-end`}>
                         <input className={`${theme === 'dark' ? 'bg-[#0B0B0C] text-white' : 'bg-white text-black'} w-full h-full text-[14px] placeholder:text-[#8E8585] p-[6px_12px] rounded`} placeholder='Search menu..' style={{ border: `1px solid ${theme === 'dark' ? '#342C2C' : '#DEDEDE'}` }} />
                     </div>
 
