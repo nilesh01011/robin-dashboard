@@ -78,7 +78,7 @@ function NavTabs({ isOpen, theme }) {
                             <span className={`capitalize ${isOpen ? 'hidden' : 'transition-all'} lg:text-[16px] text-[14px] uppercase`}>FAVORITES</span>
                         </div>
                         {!isOpen && (
-                            <BsChevronDown size={18} className={`text-[#FF3E5B] ${submenu && ('rotate-180 transition-all')} transition-all`} />
+                            <BsChevronDown size={18} className={`text-[#FF3E5B] ${!submenu && ('rotate-180 transition-all')} transition-all`} />
                         )
                         }
                     </div>
