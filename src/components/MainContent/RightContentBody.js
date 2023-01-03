@@ -23,7 +23,7 @@ function RightContentBody({ theme }) {
 
     return (
         <>
-            <div className='xl:w-[28%] w-full xl:mt-0 mt-[20px] lg:mb-0 mb-[25px]'>
+            <div className='xl:w-[28%] w-full xl:mt-[0.3rem] mt-[20px] lg:mb-0 mb-[25px]'>
                 {/* top head */}
                 <div className='w-full h-[32px] flex items-center justify-between'>
                     <button className={`rounded-md flex items-center gap-[5px] p-[8px_12px] w-max ${theme === 'dark' ? 'bg-[#242424]  ' : ' bg-white'}`} style={{ border: `1px solid ${theme === 'dark' ? '#242424' : '#DEDEDE'}` }}>

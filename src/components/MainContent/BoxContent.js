@@ -1,15 +1,14 @@
 import React from 'react'
 import { AiFillCar } from 'react-icons/ai'
 import { FaShapes } from 'react-icons/fa'
+import { crmContent, partsContent, salesContent, serviceContent } from '../../Data'
 
 function BoxContent({ title, icons, counterBox, theme }) {
 
-    // const counts = counterBox.map((ele) => ele.counts);
-    // const countsName = counterBox.map((ele) => ele.name);
-    // const names = counterBox.map((ele) => ele.name2)
-
     const changeHeadTheme = theme === 'dark' ? 'bg-[#635D5D]' : 'bg-[#F4F4F4]'
     const changeBodyTheme = theme === 'dark' ? 'bg-[#242424]' : 'bg-white'
+
+    const lastSide = Object.keys(crmContent).length - 1;
 
     return (
         <>
@@ -30,24 +29,18 @@ function BoxContent({ title, icons, counterBox, theme }) {
 
                 {/* content */}
                 <div className={`${changeBodyTheme} slg:h-[75%] h-max py-[1rem] flex items-center divide-x-[1px] rounded-b-lg`}>
-                    <div className='w-full flex flex-col items-center justify-center slg:px-[2rem] px-[15px] h-full'>
-                        <h1 className={`font-bold slg:text-[34px] xs:text-[24px] text-[16px]`}>
-                            175
-                        </h1>
-                        <h6 className='font-[400] sm:text-[12px] text-[10px] text-center'>Hot Enquiries (MTD)</h6>
-                    </div>
-                    <div className='w-full flex flex-col items-center justify-center slg:px-[2rem] px-[15px] h-full'>
-                        <h1 className='font-bold slg:text-[34px] xs:text-[24px] text-[16px]'>
-                            89
-                        </h1>
-                        <h6 className='font-[400] sm:text-[12px] text-[10px] text-center'>Vehicle Retail (MTD)</h6>
-                    </div>
-                    <div className='w-full flex flex-col items-center justify-center slg:px-[2rem] px-[15px] h-full'>
-                        <h1 className='font-bold slg:text-[34px] xs:text-[24px] text-[16px]'>121</h1>
-                        <h6 className='font-[400] xs:text-[12px] text-[10px] text-center whitespace-nowrap'>Opening Vehicle Stock</h6>
-                        {/* <h6 className='font-[400] xs:text-[12px] text-[10px] text-center whitespace-nowrap'>{names[2]}</h6> */}
-                    </div>
-
+                    {
+                        salesContent.map((ele) => {
+                            return (
+                                <div key={ele.id} className='w-full flex flex-col items-center justify-center slg:px-[2rem] px-[15px] h-full'>
+                                    <h1 className={`font-bold slg:text-[34px] xs:text-[24px] text-[16px]`}>
+                                        {ele.counts}
+                                    </h1>
+                                    <h6 className='font-[400] sm:text-[12px] text-[10px] text-center'>{ele.name}</h6>
+                                </div>
+                            )
+                        })
+                    }
                 </div>
             </div>
 
@@ -68,31 +61,22 @@ function BoxContent({ title, icons, counterBox, theme }) {
 
                 {/* content */}
                 <div className={`${changeBodyTheme} slg:h-[75%] h-max py-[1rem] flex items-center divide-x-[1px] rounded-b-lg`}>
-                    <div className='w-full flex flex-col items-center justify-center slg:px-[2rem] px-[15px] h-full'>
-                        <h1 className={`font-bold slg:text-[34px] xs:text-[24px] text-[16px]`}>
-                            24
-                        </h1>
-                        <h6 className='font-[400] sm:text-[12px] text-[10px] text-center'>Hot Enquiries (MTD)</h6>
-                        <h6 className='font-[400] xs:text-[12px] text-[10px] text-center whitespace-nowrap'>
-                            (MTD Rs. Lakhs)
-                        </h6>
-                    </div>
-                    <div className='w-full flex flex-col items-center justify-center slg:px-[2rem] px-[15px] h-full'>
-                        <h1 className='font-bold slg:text-[34px] xs:text-[24px] text-[16px]'>
-                            12
-                        </h1>
-                        <h6 className='font-[400] sm:text-[12px] text-[10px] text-center'>Vehicle Retail (MTD)</h6>
-                        <h6 className='font-[400] xs:text-[12px] text-[10px] text-center whitespace-nowrap'>
-                            (MTD Rs. Lakhs)
-                        </h6>
-                    </div>
-                    <div className='w-full flex flex-col items-center justify-center slg:px-[2rem] px-[15px] h-full'>
-                        <h1 className='font-bold slg:text-[34px] xs:text-[24px] text-[16px]'>5</h1>
-                        <h6 className='font-[400] xs:text-[12px] text-[10px] text-center whitespace-nowrap'>Opening Vehicle Stock</h6>
-                        <h6 className='font-[400] xs:text-[12px] text-[10px] text-center whitespace-nowrap'>
-                            (Landed) (Rs. Lakhs)
-                        </h6>
-                    </div>
+
+                    {
+                        partsContent.map((ele) => {
+                            return (
+                                <div key={ele.id} className='w-full flex flex-col items-center justify-center slg:px-[2rem] px-[15px] h-full'>
+                                    <h1 className={`font-bold slg:text-[34px] xs:text-[24px] text-[16px]`}>
+                                        {ele.counts}
+                                    </h1>
+                                    <h6 className='font-[400] sm:text-[12px] text-[10px] text-center'>{ele.name}</h6>
+                                    <h6 className='font-[400] xs:text-[12px] text-[10px] text-center whitespace-nowrap'>
+                                        {ele.name2}
+                                    </h6>
+                                </div>
+                            )
+                        })
+                    }
                 </div>
             </div>
 
@@ -117,31 +101,19 @@ function BoxContent({ title, icons, counterBox, theme }) {
 
                 {/* content */}
                 <div className={`${changeBodyTheme} slg:h-[75%] h-max py-[1rem] flex items-center divide-x-[1px] rounded-b-lg`}>
-                    <div className='w-full flex flex-col items-center justify-center slg:px-[2rem] px-[15px] h-full'>
-                        <h1 className={`font-bold slg:text-[34px] xs:text-[24px] text-[16px]`}>
-                            24
-                        </h1>
-                        <h6 className='font-[400] sm:text-[12px] text-[10px] text-center'>Hot Enquiries (MTD)</h6>
-                        <h6 className='font-[400] xs:text-[12px] text-[10px] text-center whitespace-nowrap'>
-                            (MTD Rs. Lakhs)
-                        </h6>
-                    </div>
-                    <div className='w-full flex flex-col items-center justify-center slg:px-[2rem] px-[15px] h-full'>
-                        <h1 className='font-bold slg:text-[34px] xs:text-[24px] text-[16px]'>
-                            12
-                        </h1>
-                        <h6 className='font-[400] sm:text-[12px] text-[10px] text-center'>Vehicle Retail (MTD)</h6>
-                        <h6 className='font-[400] xs:text-[12px] text-[10px] text-center whitespace-nowrap'>
-                            (MTD Rs. Lakhs)
-                        </h6>
-                    </div>
-                    <div className='w-full flex flex-col items-center justify-center slg:px-[2rem] px-[15px] h-full'>
-                        <h1 className='font-bold slg:text-[34px] xs:text-[24px] text-[16px]'>5</h1>
-                        <h6 className='font-[400] xs:text-[12px] text-[10px] text-center whitespace-nowrap'>Opening Vehicle Stock</h6>
-                        <h6 className='font-[400] xs:text-[12px] text-[10px] text-center whitespace-nowrap'>
-                            (Landed) (Rs. Lakhs)
-                        </h6>
-                    </div>
+                    {
+                        serviceContent.map((ele) => {
+                            return (
+                                <div key={ele.id} className='w-full flex flex-col items-center justify-center slg:px-[2rem] px-[15px] h-full'>
+                                    <h1 className='font-bold slg:text-[34px] xs:text-[24px] text-[16px]'>{ele.counts}</h1>
+                                    <h6 className='font-[400] xs:text-[12px] text-[10px] text-center whitespace-nowrap'>{ele.name}</h6>
+                                    <h6 className='font-[400] xs:text-[12px] text-[10px] text-center whitespace-nowrap'>
+                                        {ele.name2}
+                                    </h6>
+                                </div>
+                            )
+                        })
+                    }
                 </div>
             </div>
 
@@ -197,13 +169,24 @@ function BoxContent({ title, icons, counterBox, theme }) {
                         </h1>
                         <h6 className='font-[400] sm:text-[12px] text-[10px] text-center'>Follow ups for the Day</h6>
                     </div>
+
+                    {/* {
+                        crmContent.map((ele) => {
+                            return (
+                                <>
+                                    <div className={` ${ele.id === 4 && 'sm:pt-0 pt-6'}  w-full flex flex-col items-center justify-center slg:px-[2rem] px-[15px] h-full ${ele.id === 3 || ? "border-r-0 border-none" : "border-r-[1px] border-[#DEDEDE]"}`}>
+                                        <h1 className='font-bold slg:text-[34px] xs:text-[24px] text-[16px]'>{ele.counts}</h1>
+                                        <h6 className='font-[400] xs:text-[12px] text-[10px] text-center whitespace-nowrap'>{ele.name}</h6>
+                                    </div>
+                                    <div className='w-full h-full sm:hidden block absolute top-[52%]'>
+                                        <span className='w-[90%] mx-auto h-[1px] bg-[#DEDEDE] block'></span>
+                                    </div>
+                                </>
+                            )
+                        })
+                    } */}
                 </div>
             </div>
-
-            {/* <div className='w-full flex flex-col items-center justify-center slg:px-[2rem] px-[15px]'>
-                <h1 className="font-bold slg:text-[34px] xs:text-[24px] text-[16px] text-[#FF3E5B]">{counts[3]}</h1>
-                <h6 className='font-[400] xs:text-[12px] text-[10px] text-center'>{countsName[3]}</h6>
-            </div> */}
         </>
     )
 }
