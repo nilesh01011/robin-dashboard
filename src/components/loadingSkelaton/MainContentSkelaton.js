@@ -7,7 +7,13 @@ function MainContentSkelaton({ theme }) {
         <>
             <div className={`w-full h-max ${theme === 'dark' ? 'text-white' : 'text-black'} xs:pl-[20px] xs:pr-[20px] px-[10px] mb-[25px] -z-[1]`}>
                 {/* top navbar */}
-                <div className='max-h-[70px] py-[17px] flex items-center justify-end'>
+                <div className='max-h-[62px] py-[17px] flex items-center justify-between'>
+                    {/* main title */}
+                    <div className='w-[185px]'>
+                        <SkeletonTheme baseColor={`${theme === 'dark' ? '#444' : '#f5f5f5'}`} highlightColor={`${theme === 'dark' ? '#50535a' : '#ebebeb'}`}>
+                            <Skeleton height={20} />
+                        </SkeletonTheme>
+                    </div>
                     <div className='flex items-center gap-6'>
                         {/* notification icons */}
                         <div className='h-[30px] w-[30px] rounded-[5px]'>
@@ -60,7 +66,7 @@ function MainContentSkelaton({ theme }) {
                 {/* main content box */}
                 <div className='w-full mt-[15px]'>
                     {/* DASHBOARD title */}
-                    <div className='w-[100px]'>
+                    <div className='w-[150px] mb-[1rem]'>
                         <SkeletonTheme baseColor={`${theme === 'dark' ? '#444' : '#f5f5f5'}`} highlightColor={`${theme === 'dark' ? '#50535a' : '#ebebeb'}`}>
                             <Skeleton height={30} />
                         </SkeletonTheme>
@@ -69,12 +75,6 @@ function MainContentSkelaton({ theme }) {
                         {/* left sides */}
                         <div className='xl:w-[69%] w-full'>
                             <div>
-                                {/* main title */}
-                                <div className='w-[200px] my-[1rem]'>
-                                    <SkeletonTheme baseColor={`${theme === 'dark' ? '#444' : '#f5f5f5'}`} highlightColor={`${theme === 'dark' ? '#50535a' : '#ebebeb'}`}>
-                                        <Skeleton height={30} />
-                                    </SkeletonTheme>
-                                </div>
                                 {/* main box content */}
                                 <div className='flex flex-col gap-[22px] h-max w-full'>
                                     {/* 1 */}

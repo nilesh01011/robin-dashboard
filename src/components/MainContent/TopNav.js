@@ -16,7 +16,7 @@ function TopNav({ theme }) {
                 {/* title */}
                 <div className='slg:block hidden'>
                     <div className='flex'>
-                        <h1 className='text-[20px] font-bold'>Welcome back John!</h1>
+                        <h1 className='text-[18px] font-bold'>Welcome back John!</h1>
                     </div>
                 </div>
                 <div className='w-max h-full slg:hidden block'>

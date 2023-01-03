@@ -27,8 +27,9 @@ function Loading() {
                         </div>
                     </div>
                     {/* bottom logo */}
-                    <div className='w-full h-[100px] flex items-center justify-center'>
-                        <img src='./images/adc.png' className='h-full w-[100px] my-auto' alt='logo-images' />
+                    <div className='w-[100px] h-[100px] mx-auto mb-[20px]'>
+                        <span className='text-[10px] text-white text-left w-full'>Powered by</span>
+                        <img src='./images/adc.png' className='h-[67px] w-full object-contain my-auto' alt='logo-images' />
                     </div>
                 </div>
             </div>
