@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#navbars::-webkit-scrollbar,
+#overFlowNone::-webkit-scrollbar {
+  display: none;
+}
+
+#navbars::-webkit-scrollbar,
+#overFlowNone::-webkit-scrollbar {
+  --webkit-scrollbar-width: none;
+  -ms-scrollbar-width: none; /* IE and Edge */
+  scrollbar-width: none;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+input:focus-visible,
+input {
+  border: none;
+  outline: none;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+#right-to-left {
+  animation: rightToLeft 0.7s linear;
+  right: 5px;
+}
+
+@keyframes rightToLeft {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+#left-to-right {
+  right: -400px;
+  animation: leftToRight 0.7s linear;
+  transition: right 0.7s ease-in-out !important;
+}
+
+@keyframes leftToRight {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+/* smooth sidebar slide */
+
+#isOpenNavbar {
+  width: 60px;
+  transition: width 0.3s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+}
+
+#isOpenNavbar.isOpenNavbar {
+  width: 282px;
+  transition: width 0.3s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+}
+
+/* media query */
+
+@media screen and (max-width: 1038px) {
+  #login {
+    background-image: url('../public/images/iPad_BG.png') !important;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  #isOpenNavbar {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 756px) {
+  #login {
+    background-image: url('../public/images/iPhone_BG.png') !important;
+  }
+}
