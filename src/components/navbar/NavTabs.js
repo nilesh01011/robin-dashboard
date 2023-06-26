@@ -232,7 +232,7 @@ function NavTabs({ isOpen, theme }) {
                             {
                                 SubMenuList.map((ele) => {
                                     return (
-                                        <li onClick={() => setActiveTabs(ele.id)} key={ele.id} className={`w-auto whitespace-nowrap ${activeTabs === ele.id ? `text-[#FF3E5B] ${theme === 'dark' ? 'bg-[#0B0B0C]' : 'bg-white'}` : `${theme === 'dark' ? 'text-white hover:bg-[#0B0B0C]' : 'text-[#342C2C] hover:bg-[#f2f2f2]'}`} text-left pl-[30px] rounded py-[5px] lg:text-[14px] text-[12px]`}>
+                                        <li onClick={() => setActiveTabs(ele.id)} key={ele.id} className={`w-auto whitespace-nowrap ${activeTabs === ele.id ? `text-[#FF3E5B] ${theme === 'dark' ? 'bg-[#0B0B0C]' : 'bg-white'}` : `${theme === 'dark' ? 'text-white hover:bg-[#0B0B0C]' : 'text-[#342C2C] hover:bg-[#fff]'}`} text-left pl-[30px] rounded py-[5px] lg:text-[14px] text-[12px]`}>
                                             {ele.list}
                                         </li>
                                     )
@@ -290,7 +290,7 @@ function NavTabs({ isOpen, theme }) {
                             {
                                 SubMenuList.map((ele) => {
                                     return (
-                                        <li onClick={() => setActiveTabs(ele.id)} key={ele.id} className={`w-auto whitespace-nowrap ${activeTabs === ele.id ? `text-[#FF3E5B] ${theme === 'dark' ? 'bg-[#0B0B0C]' : 'bg-white'}` : `${theme === 'dark' ? 'text-white hover:bg-[#0B0B0C]' : 'text-[#342C2C] hover:bg-[#f2f2f2]'}`} text-left pl-[30px] rounded py-[5px] lg:text-[14px] text-[12px]`}>
+                                        <li onClick={() => setActiveTabs(ele.id)} key={ele.id} className={`w-auto whitespace-nowrap ${activeTabs === ele.id ? `text-[#FF3E5B] ${theme === 'dark' ? 'bg-[#0B0B0C]' : 'bg-white'}` : `${theme === 'dark' ? 'text-white hover:bg-[#0B0B0C]' : 'text-[#342C2C] hover:bg-[#fff]'}`} text-left pl-[30px] rounded py-[5px] lg:text-[14px] text-[12px]`}>
                                             {ele.list}
                                         </li>
                                     )
@@ -348,7 +348,7 @@ function NavTabs({ isOpen, theme }) {
                             {
                                 SubMenuList.map((ele) => {
                                     return (
-                                        <li onClick={() => setActiveTabs(ele.id)} key={ele.id} className={`w-auto whitespace-nowrap ${activeTabs === ele.id ? `text-[#FF3E5B] ${theme === 'dark' ? 'bg-[#0B0B0C]' : 'bg-white'}` : `${theme === 'dark' ? 'text-white hover:bg-[#0B0B0C]' : 'text-[#342C2C] hover:bg-[#f2f2f2]'}`} text-left pl-[30px] rounded py-[5px] lg:text-[14px] text-[12px]`}>
+                                        <li onClick={() => setActiveTabs(ele.id)} key={ele.id} className={`w-auto whitespace-nowrap ${activeTabs === ele.id ? `text-[#FF3E5B] ${theme === 'dark' ? 'bg-[#0B0B0C]' : 'bg-white'}` : `${theme === 'dark' ? 'text-white hover:bg-[#0B0B0C]' : 'text-[#342C2C] hover:bg-[#fff]'}`} text-left pl-[30px] rounded py-[5px] lg:text-[14px] text-[12px]`}>
                                             {ele.list}
                                         </li>
                                     )
@@ -424,7 +424,7 @@ function NavTabs({ isOpen, theme }) {
                         </span>
                         {/* list */}
                         <ul className='w-full mt-[0.4rem] flex flex-col gap-1'>
-                            <li className={`w-auto whitespace-nowrap ${partsTabs ? `text-[#FF3E5B] ${theme === 'dark' ? 'bg-[#0B0B0C]' : 'bg-white'}` : `${theme === 'dark' ? 'text-white' : 'text-[#342C2C] hover:bg-[#f2f2f2]'}`} text-left pl-[30px] pr-[10px] rounded py-[5px] text-[12px]`}>
+                            <li className={`w-auto whitespace-nowrap ${partsTabs ? `text-[#FF3E5B] ${theme === 'dark' ? 'bg-[#0B0B0C]' : 'bg-white'}` : `${theme === 'dark' ? 'text-white' : 'text-[#342C2C] hover:bg-[#fff]'}`} text-left pl-[30px] pr-[10px] rounded py-[5px] text-[12px]`}>
                                 <div onClick={() => { setMiniTabsOpen(!miniTabsOpen) }} className='w-full flex justify-between items-center'>
                                     <span>Part Ordering</span>
                                     <BsChevronDown size={18} className={`${theme === 'dark' ? 'text-white' : 'text-black'} ${miniTabsOpen === true && ('rotate-180 transition-all')} transition-all`} />
@@ -433,15 +433,15 @@ function NavTabs({ isOpen, theme }) {
                             {
                                 miniTabsOpen === true &&
                                 <ul className='w-full pl-[21px] flex flex-col gap-1'>
-                                    <li onClick={() => { setInnerTabsActive(1); goToSuggestPage() }} className={`w-auto whitespace-nowrap ${pathname === suggestPathname && `text-[#FF3E5B] ${theme === 'dark' ? 'bg-[#0B0B0C]' : 'bg-[#F2F2F2]'}`} ${innerTabsActive === 1 ? `text-[#FF3E5B] ${theme === 'dark' ? 'bg-[#0B0B0C]' : 'bg-[#F2F2F2]'}` : `${theme === 'dark' ? 'text-white hover:bg-[#0B0B0C]' : 'text-[#342C2C] hover:bg-[#F2F2F2]'}`} text-left pl-[20px] rounded py-[5px] text-[12px]`}>
+                                    <li onClick={() => { setInnerTabsActive(1); goToSuggestPage() }} className={`w-auto whitespace-nowrap ${pathname === suggestPathname && `text-[#FF3E5B] ${theme === 'dark' ? 'bg-[#0B0B0C]' : 'bg-[#F2F2F2]'}`} ${innerTabsActive === 1 ? `text-[#FF3E5B] ${theme === 'dark' ? 'bg-[#0B0B0C]' : 'bg-[#F2F2F2]'}` : `${theme === 'dark' ? 'text-white hover:bg-[#0B0B0C]' : 'text-[#342C2C] hover:bg-[#fff]'}`} text-left pl-[20px] rounded py-[5px] text-[12px]`}>
                                         <span className={`${pathname === suggestPathname && 'text-[#FF3E5B]'}`}>Suggested Order Qty. (SOQ)</span>
                                     </li>
-                                    <li onClick={() => setInnerTabsActive(2)} className={`w-auto whitespace-nowrap ${innerTabsActive === 2 ? `text-[#FF3E5B] ${theme === 'dark' ? 'bg-[#0B0B0C]' : 'bg-[#F2F2F2]'}` : `${theme === 'dark' ? 'text-white hover:bg-[#0B0B0C]' : 'text-[#342C2C] hover:bg-[#F2F2F2]'}`} text-left pl-[20px] rounded py-[5px] text-[12px]`}>Purchase Order</li>
-                                    <li onClick={() => setInnerTabsActive(3)} className={`w-auto whitespace-nowrap ${innerTabsActive === 3 ? `text-[#FF3E5B] ${theme === 'dark' ? 'bg-[#0B0B0C]' : 'bg-[#F2F2F2]'}` : `${theme === 'dark' ? 'text-white hover:bg-[#0B0B0C]' : 'text-[#342C2C] hover:bg-[#F2F2F2]'}`} text-left pl-[20px] rounded py-[5px] text-[12px]`}>PO-lap</li>
+                                    <li onClick={() => setInnerTabsActive(2)} className={`w-auto whitespace-nowrap ${innerTabsActive === 2 ? `text-[#FF3E5B] ${theme === 'dark' ? 'bg-[#0B0B0C]' : 'bg-[#F2F2F2]'}` : `${theme === 'dark' ? 'text-white hover:bg-[#0B0B0C]' : 'text-[#342C2C] hover:bg-[#fff]'}`} text-left pl-[20px] rounded py-[5px] text-[12px]`}>Purchase Order</li>
+                                    <li onClick={() => setInnerTabsActive(3)} className={`w-auto whitespace-nowrap ${innerTabsActive === 3 ? `text-[#FF3E5B] ${theme === 'dark' ? 'bg-[#0B0B0C]' : 'bg-[#F2F2F2]'}` : `${theme === 'dark' ? 'text-white hover:bg-[#0B0B0C]' : 'text-[#342C2C] hover:bg-[#fff]'}`} text-left pl-[20px] rounded py-[5px] text-[12px]`}>PO-lap</li>
                                 </ul>
                             }
 
-                            <li className={`w-auto whitespace-nowrap ${partsTabs ? `text-[#FF3E5B] ${theme === 'dark' ? 'bg-[#0B0B0C]' : 'bg-white'}` : `${theme === 'dark' ? 'text-white hover:bg-[#0B0B0C]' : 'text-[#342C2C] hover:bg-[#F2F2F2]'}`} text-left pl-[30px] pr-[10px] rounded py-[5px] text-[12px]`}>
+                            <li className={`w-auto whitespace-nowrap ${partsTabs ? `text-[#FF3E5B] ${theme === 'dark' ? 'bg-[#0B0B0C]' : 'bg-white'}` : `${theme === 'dark' ? 'text-white hover:bg-[#0B0B0C]' : 'text-[#342C2C] hover:bg-[#fff]'}`} text-left pl-[30px] pr-[10px] rounded py-[5px] text-[12px]`}>
                                 <div className='w-full flex justify-between items-center'>
                                     <span>Receive Parts</span>
                                     {/* <BsChevronDown size={18} className={`${theme === 'dark' ? 'text-white' : 'text-black'} ${miniTabsOpen === true && ('rotate-180 transition-all')} transition-all`} /> */}
@@ -449,7 +449,7 @@ function NavTabs({ isOpen, theme }) {
                             </li>
 
 
-                            <li className={`w-auto whitespace-nowrap ${partsTabs ? `text-[#FF3E5B] ${theme === 'dark' ? 'bg-[#0B0B0C]' : 'bg-white'}` : `${theme === 'dark' ? 'text-white hover:bg-[#0B0B0C]' : 'text-[#342C2C] hover:bg-[#F2F2F2]'}`} text-left pl-[30px] pr-[10px] rounded py-[5px] text-[12px]`}>
+                            <li className={`w-auto whitespace-nowrap ${partsTabs ? `text-[#FF3E5B] ${theme === 'dark' ? 'bg-[#0B0B0C]' : 'bg-white'}` : `${theme === 'dark' ? 'text-white hover:bg-[#0B0B0C]' : 'text-[#342C2C] hover:bg-[#fff]'}`} text-left pl-[30px] pr-[10px] rounded py-[5px] text-[12px]`}>
                                 <div className='w-full flex justify-between items-center'>
                                     <span>Workshop Related</span>
                                     {/* <BsChevronDown size={18} className={`${theme === 'dark' ? 'text-white' : 'text-black'} ${miniTabsOpen === true && ('rotate-180 transition-all')} transition-all`} /> */}
@@ -457,28 +457,28 @@ function NavTabs({ isOpen, theme }) {
                             </li>
 
 
-                            <li className={`w-auto whitespace-nowrap ${partsTabs ? `text-[#FF3E5B] ${theme === 'dark' ? 'bg-[#0B0B0C]' : 'bg-white'}` : `${theme === 'dark' ? 'text-white hover:bg-[#0B0B0C]' : 'text-[#342C2C] hover:bg-[#F2F2F2]'}`} text-left pl-[30px] pr-[10px] rounded py-[5px] text-[12px]`}>
+                            <li className={`w-auto whitespace-nowrap ${partsTabs ? `text-[#FF3E5B] ${theme === 'dark' ? 'bg-[#0B0B0C]' : 'bg-white'}` : `${theme === 'dark' ? 'text-white hover:bg-[#0B0B0C]' : 'text-[#342C2C] hover:bg-[#fff]'}`} text-left pl-[30px] pr-[10px] rounded py-[5px] text-[12px]`}>
                                 <div className='w-full flex justify-between items-center'>
                                     <span>Branch wise Stock View</span>
                                     {/* <BsChevronDown size={18} className={`${theme === 'dark' ? 'text-white' : 'text-black'} ${miniTabsOpen === true && ('rotate-180 transition-all')} transition-all`} /> */}
                                 </div>
                             </li>
 
-                            <li onClick={() => setMiniTabsOpen_2(!miniTabsOpen_2)} className={`w-auto whitespace-nowrap ${partsTabs ? `text-[#FF3E5B] ${theme === 'dark' ? 'bg-[#0B0B0C]' : 'bg-white'}` : `${theme === 'dark' ? 'text-white hover:bg-[#0B0B0C]' : 'text-[#342C2C] hover:bg-[#F2F2F2]'}`} text-left pl-[30px] pr-[10px] rounded py-[5px] text-[12px]`}>
+                            <li onClick={() => setMiniTabsOpen_2(!miniTabsOpen_2)} className={`w-auto whitespace-nowrap ${partsTabs ? `text-[#FF3E5B] ${theme === 'dark' ? 'bg-[#0B0B0C]' : 'bg-white'}` : `${theme === 'dark' ? 'text-white hover:bg-[#0B0B0C]' : 'text-[#342C2C] hover:bg-[#fff]'}`} text-left pl-[30px] pr-[10px] rounded py-[5px] text-[12px]`}>
                                 <div className='w-full flex justify-between items-center'>
                                     <span>Part sales</span>
                                     <BsChevronDown size={18} className={`${theme === 'dark' ? 'text-white' : 'text-black'} ${miniTabsOpen_2 === true && ('rotate-180 transition-all')} transition-all`} />
                                 </div>
                             </li>
 
-                            <li onClick={() => setMiniTabsOpen_3(!miniTabsOpen_3)} className={`w-auto whitespace-nowrap ${partsTabs ? `text-[#FF3E5B] ${theme === 'dark' ? 'bg-[#0B0B0C]' : 'bg-white'}` : `${theme === 'dark' ? 'text-white hover:bg-[#0B0B0C]' : 'text-[#342C2C] hover:bg-[#F2F2F2]'}`} text-left pl-[30px] pr-[10px] rounded py-[5px] text-[12px]`}>
+                            <li onClick={() => setMiniTabsOpen_3(!miniTabsOpen_3)} className={`w-auto whitespace-nowrap ${partsTabs ? `text-[#FF3E5B] ${theme === 'dark' ? 'bg-[#0B0B0C]' : 'bg-white'}` : `${theme === 'dark' ? 'text-white hover:bg-[#0B0B0C]' : 'text-[#342C2C] hover:bg-[#fff]'}`} text-left pl-[30px] pr-[10px] rounded py-[5px] text-[12px]`}>
                                 <div className='w-full flex justify-between items-center'>
                                     <span>Stock Transfer</span>
                                     <BsChevronDown size={18} className={`${theme === 'dark' ? 'text-white' : 'text-black'} ${miniTabsOpen_3 === true && ('rotate-180 transition-all')} transition-all`} />
                                 </div>
                             </li>
 
-                            <li className={`w-auto whitespace-nowrap ${partsTabs ? `text-[#FF3E5B] ${theme === 'dark' ? 'bg-[#0B0B0C]' : 'bg-white'}` : `${theme === 'dark' ? 'text-white hover:bg-[#0B0B0C]' : 'text-[#342C2C] hover:bg-[#F2F2F2]'}`} text-left pl-[30px] pr-[10px] rounded py-[5px] text-[12px]`}>
+                            <li className={`w-auto whitespace-nowrap ${partsTabs ? `text-[#FF3E5B] ${theme === 'dark' ? 'bg-[#0B0B0C]' : 'bg-white'}` : `${theme === 'dark' ? 'text-white hover:bg-[#0B0B0C]' : 'text-[#342C2C] hover:bg-[#fff]'}`} text-left pl-[30px] pr-[10px] rounded py-[5px] text-[12px]`}>
                                 <div className='w-full flex justify-between items-center'>
                                     <span>Stock</span>
                                     {/* <BsChevronDown size={18} className={`${theme === 'dark' ? 'text-white' : 'text-black'} ${miniTabsOpen === true && ('rotate-180 transition-all')} transition-all`} /> */}
@@ -586,7 +586,7 @@ function NavTabs({ isOpen, theme }) {
                             {
                                 SubMenuList.map((ele) => {
                                     return (
-                                        <li onClick={() => setActiveTabs(ele.id)} key={ele.id} className={`w-auto whitespace-nowrap ${activeTabs === ele.id ? `text-[#FF3E5B] ${theme === 'dark' ? 'bg-[#0B0B0C]' : 'bg-white'}` : `${theme === 'dark' ? 'text-white hover:bg-[#0B0B0C]' : 'text-[#342C2C] hover:bg-[#f2f2f2]'}`} text-left pl-[30px] rounded py-[5px] lg:text-[14px] text-[12px]`}>
+                                        <li onClick={() => setActiveTabs(ele.id)} key={ele.id} className={`w-auto whitespace-nowrap ${activeTabs === ele.id ? `text-[#FF3E5B] ${theme === 'dark' ? 'bg-[#0B0B0C]' : 'bg-white'}` : `${theme === 'dark' ? 'text-white hover:bg-[#0B0B0C]' : 'text-[#342C2C] hover:bg-[#fff]'}`} text-left pl-[30px] rounded py-[5px] lg:text-[14px] text-[12px]`}>
                                             {ele.list}
                                         </li>
                                     )
@@ -645,7 +645,7 @@ function NavTabs({ isOpen, theme }) {
                             {
                                 SubMenuList.map((ele) => {
                                     return (
-                                        <li onClick={() => setActiveTabs(ele.id)} key={ele.id} className={`w-auto whitespace-nowrap ${activeTabs === ele.id ? `text-[#FF3E5B] ${theme === 'dark' ? 'bg-[#0B0B0C]' : 'bg-white'}` : `${theme === 'dark' ? 'text-white hover:bg-[#0B0B0C]' : 'text-[#342C2C] hover:bg-[#f2f2f2]'}`} text-left pl-[30px] rounded py-[5px] lg:text-[14px] text-[12px]`}>
+                                        <li onClick={() => setActiveTabs(ele.id)} key={ele.id} className={`w-auto whitespace-nowrap ${activeTabs === ele.id ? `text-[#FF3E5B] ${theme === 'dark' ? 'bg-[#0B0B0C]' : 'bg-white'}` : `${theme === 'dark' ? 'text-white hover:bg-[#0B0B0C]' : 'text-[#342C2C] hover:bg-[#fff]'}`} text-left pl-[30px] rounded py-[5px] lg:text-[14px] text-[12px]`}>
                                             {ele.list}
                                         </li>
                                     )
@@ -707,7 +707,7 @@ function NavTabs({ isOpen, theme }) {
                             {
                                 SubMenuList.map((ele) => {
                                     return (
-                                        <li onClick={() => setActiveTabs(ele.id)} key={ele.id} className={`w-auto whitespace-nowrap ${activeTabs === ele.id ? `text-[#FF3E5B] ${theme === 'dark' ? 'bg-[#0B0B0C]' : 'bg-white'}` : `${theme === 'dark' ? 'text-white hover:bg-[#0B0B0C]' : 'text-[#342C2C] hover:bg-[#f2f2f2]'}`} text-left pl-[30px] rounded py-[5px] lg:text-[14px] text-[12px]`}>
+                                        <li onClick={() => setActiveTabs(ele.id)} key={ele.id} className={`w-auto whitespace-nowrap ${activeTabs === ele.id ? `text-[#FF3E5B] ${theme === 'dark' ? 'bg-[#0B0B0C]' : 'bg-white'}` : `${theme === 'dark' ? 'text-white hover:bg-[#0B0B0C]' : 'text-[#342C2C] hover:bg-[#fff]'}`} text-left pl-[30px] rounded py-[5px] lg:text-[14px] text-[12px]`}>
                                             {ele.list}
                                         </li>
                                     )
@@ -765,7 +765,7 @@ function NavTabs({ isOpen, theme }) {
                             {
                                 SubMenuList.map((ele) => {
                                     return (
-                                        <li onClick={() => setActiveTabs(ele.id)} key={ele.id} className={`w-auto whitespace-nowrap ${activeTabs === ele.id ? `text-[#FF3E5B] ${theme === 'dark' ? 'bg-[#0B0B0C]' : 'bg-white'}` : `${theme === 'dark' ? 'text-white hover:bg-[#0B0B0C]' : 'text-[#342C2C] hover:bg-[#f2f2f2]'}`} text-left pl-[30px] rounded py-[5px] lg:text-[14px] text-[12px]`}>
+                                        <li onClick={() => setActiveTabs(ele.id)} key={ele.id} className={`w-auto whitespace-nowrap ${activeTabs === ele.id ? `text-[#FF3E5B] ${theme === 'dark' ? 'bg-[#0B0B0C]' : 'bg-white'}` : `${theme === 'dark' ? 'text-white hover:bg-[#0B0B0C]' : 'text-[#342C2C] hover:bg-[#fff]'}`} text-left pl-[30px] rounded py-[5px] lg:text-[14px] text-[12px]`}>
                                             {ele.list}
                                         </li>
                                     )
@@ -820,39 +820,37 @@ function NavTabs({ isOpen, theme }) {
                             <BsFillCaretLeftFill size={18} className={`${theme === "dark" ? 'text-[#545454]' : 'text-[#f2f2f2]'}`} />
                         </span>
                         {/* list */}
-                        <ul className='w-full mt-[0.4rem] flex flex-col gap-1'>
-                            <ul className='w-full mt-[0.4rem] flex flex-col gap-1'>
-                                {/* ${pathname === adminCustomer && `text-[#FF3E5B] ${theme === 'dark' ? 'bg-[#0B0B0C]' : 'bg-[#F2F2F2]'}`} */}
-                                <li className={`w-auto whitespace-nowrap ${partsTabs ? `text-[#FF3E5B] ${theme === 'dark' ? 'bg-[#0B0B0C]' : 'bg-white'}` : `${theme === 'dark' ? `${pathname === adminCustomer ? 'text-[#FF3E5B] bg-[#0B0B0C]' : 'text-white hover:bg-[#0B0B0C]'}` : `${pathname === adminCustomer ? 'text-[#FF3E5B] bg-[#F2F2F2]' : 'text-[#342C2C] hover:bg-[#F2F2F2]'}`}`}  text-left pl-[30px] pr-[10px] rounded py-[5px] text-[12px]`}>
-                                    <div onClick={() => goToAdminCustomerPage()} className={`w-full flex justify-between items-center`}>
-                                        <span>Customer Master</span>
-                                        {/* <BsChevronDown size={18} className={`${theme === 'dark' ? 'text-white' : 'text-black'} ${miniTabsOpen === true && ('rotate-180 transition-all')} transition-all`} /> */}
-                                    </div>
-                                </li>
+                        <ul className='w-full flex flex-col'>
+                            {/* ${pathname === adminCustomer && `text-[#FF3E5B] ${theme === 'dark' ? 'bg-[#0B0B0C]' : 'bg-[#F2F2F2]'}`} */}
+                            <li className={`w-auto whitespace-nowrap ${partsTabs ? `text-[#FF3E5B] ${theme === 'dark' ? 'bg-[#0B0B0C]' : 'bg-white'}` : `${theme === 'dark' ? `${pathname === adminCustomer ? 'text-[#FF3E5B] bg-[#0B0B0C]' : 'text-white hover:bg-[#0B0B0C]'}` : `${pathname === adminCustomer ? 'text-[#FF3E5B] bg-[#F2F2F2]' : 'text-[#342C2C] hover:bg-[#fff]'}`}`}  text-left pl-[30px] pr-[10px] rounded py-[5px] text-[12px]`}>
+                                <div onClick={() => goToAdminCustomerPage()} className={`w-full flex justify-between items-center`}>
+                                    <span>Customer Master</span>
+                                    {/* <BsChevronDown size={18} className={`${theme === 'dark' ? 'text-white' : 'text-black'} ${miniTabsOpen === true && ('rotate-180 transition-all')} transition-all`} /> */}
+                                </div>
+                            </li>
 
-                                <li className={`w-auto whitespace-nowrap ${partsTabs ? `text-[#FF3E5B] ${theme === 'dark' ? 'bg-[#0B0B0C]' : 'bg-white'}` : `${theme === 'dark' ? 'text-white hover:bg-[#0B0B0C]' : 'text-[#342C2C] hover:bg-[#F2F2F2]'}`} text-left pl-[30px] pr-[10px] rounded py-[5px] text-[12px]`}>
-                                    <div className='w-full flex justify-between items-center'>
-                                        <span>List</span>
-                                        {/* <BsChevronDown size={18} className={`${theme === 'dark' ? 'text-white' : 'text-black'} ${miniTabsOpen === true && ('rotate-180 transition-all')} transition-all`} /> */}
-                                    </div>
-                                </li>
-
-
-                                <li className={`w-auto whitespace-nowrap ${partsTabs ? `text-[#FF3E5B] ${theme === 'dark' ? 'bg-[#0B0B0C]' : 'bg-white'}` : `${theme === 'dark' ? 'text-white hover:bg-[#0B0B0C]' : 'text-[#342C2C] hover:bg-[#F2F2F2]'}`} text-left pl-[30px] pr-[10px] rounded py-[5px] text-[12px]`}>
-                                    <div className='w-full flex justify-between items-center'>
-                                        <span>List</span>
-                                        {/* <BsChevronDown size={18} className={`${theme === 'dark' ? 'text-white' : 'text-black'} ${miniTabsOpen === true && ('rotate-180 transition-all')} transition-all`} /> */}
-                                    </div>
-                                </li>
+                            <li className={`w-auto whitespace-nowrap ${partsTabs ? `text-[#FF3E5B] ${theme === 'dark' ? 'bg-[#0B0B0C]' : 'bg-white'}` : `${theme === 'dark' ? 'text-white hover:bg-[#0B0B0C]' : 'text-[#342C2C] hover:bg-[#fff]'}`} text-left pl-[30px] pr-[10px] rounded py-[5px] text-[12px]`}>
+                                <div className='w-full flex justify-between items-center'>
+                                    <span>List</span>
+                                    {/* <BsChevronDown size={18} className={`${theme === 'dark' ? 'text-white' : 'text-black'} ${miniTabsOpen === true && ('rotate-180 transition-all')} transition-all`} /> */}
+                                </div>
+                            </li>
 
 
-                                <li className={`w-auto whitespace-nowrap ${partsTabs ? `text-[#FF3E5B] ${theme === 'dark' ? 'bg-[#0B0B0C]' : 'bg-white'}` : `${theme === 'dark' ? 'text-white hover:bg-[#0B0B0C]' : 'text-[#342C2C] hover:bg-[#F2F2F2]'}`} text-left pl-[30px] pr-[10px] rounded py-[5px] text-[12px]`}>
-                                    <div className='w-full flex justify-between items-center'>
-                                        <span>List</span>
-                                        {/* <BsChevronDown size={18} className={`${theme === 'dark' ? 'text-white' : 'text-black'} ${miniTabsOpen === true && ('rotate-180 transition-all')} transition-all`} /> */}
-                                    </div>
-                                </li>
-                            </ul>
+                            <li className={`w-auto whitespace-nowrap ${partsTabs ? `text-[#FF3E5B] ${theme === 'dark' ? 'bg-[#0B0B0C]' : 'bg-white'}` : `${theme === 'dark' ? 'text-white hover:bg-[#0B0B0C]' : 'text-[#342C2C] hover:bg-[#fff]'}`} text-left pl-[30px] pr-[10px] rounded py-[5px] text-[12px]`}>
+                                <div className='w-full flex justify-between items-center'>
+                                    <span>List</span>
+                                    {/* <BsChevronDown size={18} className={`${theme === 'dark' ? 'text-white' : 'text-black'} ${miniTabsOpen === true && ('rotate-180 transition-all')} transition-all`} /> */}
+                                </div>
+                            </li>
+
+
+                            <li className={`w-auto whitespace-nowrap ${partsTabs ? `text-[#FF3E5B] ${theme === 'dark' ? 'bg-[#0B0B0C]' : 'bg-white'}` : `${theme === 'dark' ? 'text-white hover:bg-[#0B0B0C]' : 'text-[#342C2C] hover:bg-[#fff]'}`} text-left pl-[30px] pr-[10px] rounded py-[5px] text-[12px]`}>
+                                <div className='w-full flex justify-between items-center'>
+                                    <span>List</span>
+                                    {/* <BsChevronDown size={18} className={`${theme === 'dark' ? 'text-white' : 'text-black'} ${miniTabsOpen === true && ('rotate-180 transition-all')} transition-all`} /> */}
+                                </div>
+                            </li>
                         </ul>
                     </div>
 
@@ -862,39 +860,37 @@ function NavTabs({ isOpen, theme }) {
                             submenu_9 && !isOpen &&
                             (
                                 <>
-                                    <ul className='w-full mt-[0.4rem] flex flex-col gap-1'>
-                                        <ul className='w-full mt-[0.4rem] flex flex-col gap-1'>
-                                            {/* ${pathname === adminCustomer && `text-[#FF3E5B] ${theme === 'dark' ? 'bg-[#0B0B0C]' : 'bg-[#F2F2F2]'}`} */}
-                                            <li className={`w-auto whitespace-nowrap ${partsTabs ? `text-[#FF3E5B] ${theme === 'dark' ? 'bg-[#0B0B0C]' : 'bg-white'}` : `${theme === 'dark' ? `${pathname === adminCustomer ? 'text-[#FF3E5B] bg-[#0B0B0C]' : 'text-white hover:bg-[#0B0B0C]'}` : `${pathname === adminCustomer ? 'text-[#FF3E5B] bg-[#F2F2F2]' : 'text-[#342C2C] hover:bg-[#F2F2F2]'}`}`}  text-left pl-[30px] pr-[10px] rounded py-[5px] text-[12px]`}>
-                                                <div onClick={() => goToAdminCustomerPage()} className={`w-full flex justify-between items-center`}>
-                                                    <span>Customer Master</span>
-                                                    {/* <BsChevronDown size={18} className={`${theme === 'dark' ? 'text-white' : 'text-black'} ${miniTabsOpen === true && ('rotate-180 transition-all')} transition-all`} /> */}
-                                                </div>
-                                            </li>
+                                    <ul className='w-full flex flex-col'>
+                                        {/* ${pathname === adminCustomer && `text-[#FF3E5B] ${theme === 'dark' ? 'bg-[#0B0B0C]' : 'bg-[#F2F2F2]'}`} */}
+                                        <li className={`w-auto whitespace-nowrap ${partsTabs ? `text-[#FF3E5B] ${theme === 'dark' ? 'bg-[#0B0B0C]' : 'bg-white'}` : `${theme === 'dark' ? `${pathname === adminCustomer ? 'text-[#FF3E5B] bg-[#0B0B0C]' : 'text-white hover:bg-[#0B0B0C]'}` : `${pathname === adminCustomer ? 'text-[#FF3E5B] bg-[#F2F2F2]' : 'text-[#342C2C] hover:bg-[#F2F2F2]'}`}`}  text-left pl-[30px] pr-[10px] rounded py-[5px] text-[12px]`}>
+                                            <div onClick={() => goToAdminCustomerPage()} className={`w-full flex justify-between items-center`}>
+                                                <span>Customer Master</span>
+                                                {/* <BsChevronDown size={18} className={`${theme === 'dark' ? 'text-white' : 'text-black'} ${miniTabsOpen === true && ('rotate-180 transition-all')} transition-all`} /> */}
+                                            </div>
+                                        </li>
 
-                                            <li className={`w-auto whitespace-nowrap ${partsTabs ? `text-[#FF3E5B] ${theme === 'dark' ? 'bg-[#0B0B0C]' : 'bg-white'}` : `${theme === 'dark' ? 'text-white hover:bg-[#0B0B0C]' : 'text-[#342C2C] hover:bg-[#F2F2F2]'}`} text-left pl-[30px] pr-[10px] rounded py-[5px] text-[12px]`}>
-                                                <div className='w-full flex justify-between items-center'>
-                                                    <span>List</span>
-                                                    {/* <BsChevronDown size={18} className={`${theme === 'dark' ? 'text-white' : 'text-black'} ${miniTabsOpen === true && ('rotate-180 transition-all')} transition-all`} /> */}
-                                                </div>
-                                            </li>
-
-
-                                            <li className={`w-auto whitespace-nowrap ${partsTabs ? `text-[#FF3E5B] ${theme === 'dark' ? 'bg-[#0B0B0C]' : 'bg-white'}` : `${theme === 'dark' ? 'text-white hover:bg-[#0B0B0C]' : 'text-[#342C2C] hover:bg-[#F2F2F2]'}`} text-left pl-[30px] pr-[10px] rounded py-[5px] text-[12px]`}>
-                                                <div className='w-full flex justify-between items-center'>
-                                                    <span>List</span>
-                                                    {/* <BsChevronDown size={18} className={`${theme === 'dark' ? 'text-white' : 'text-black'} ${miniTabsOpen === true && ('rotate-180 transition-all')} transition-all`} /> */}
-                                                </div>
-                                            </li>
+                                        <li className={`w-auto whitespace-nowrap ${partsTabs ? `text-[#FF3E5B] ${theme === 'dark' ? 'bg-[#0B0B0C]' : 'bg-white'}` : `${theme === 'dark' ? 'text-white hover:bg-[#0B0B0C]' : 'text-[#342C2C] hover:bg-[#F2F2F2]'}`} text-left pl-[30px] pr-[10px] rounded py-[5px] text-[12px]`}>
+                                            <div className='w-full flex justify-between items-center'>
+                                                <span>List</span>
+                                                {/* <BsChevronDown size={18} className={`${theme === 'dark' ? 'text-white' : 'text-black'} ${miniTabsOpen === true && ('rotate-180 transition-all')} transition-all`} /> */}
+                                            </div>
+                                        </li>
 
 
-                                            <li className={`w-auto whitespace-nowrap ${partsTabs ? `text-[#FF3E5B] ${theme === 'dark' ? 'bg-[#0B0B0C]' : 'bg-white'}` : `${theme === 'dark' ? 'text-white hover:bg-[#0B0B0C]' : 'text-[#342C2C] hover:bg-[#F2F2F2]'}`} text-left pl-[30px] pr-[10px] rounded py-[5px] text-[12px]`}>
-                                                <div className='w-full flex justify-between items-center'>
-                                                    <span>List</span>
-                                                    {/* <BsChevronDown size={18} className={`${theme === 'dark' ? 'text-white' : 'text-black'} ${miniTabsOpen === true && ('rotate-180 transition-all')} transition-all`} /> */}
-                                                </div>
-                                            </li>
-                                        </ul>
+                                        <li className={`w-auto whitespace-nowrap ${partsTabs ? `text-[#FF3E5B] ${theme === 'dark' ? 'bg-[#0B0B0C]' : 'bg-white'}` : `${theme === 'dark' ? 'text-white hover:bg-[#0B0B0C]' : 'text-[#342C2C] hover:bg-[#F2F2F2]'}`} text-left pl-[30px] pr-[10px] rounded py-[5px] text-[12px]`}>
+                                            <div className='w-full flex justify-between items-center'>
+                                                <span>List</span>
+                                                {/* <BsChevronDown size={18} className={`${theme === 'dark' ? 'text-white' : 'text-black'} ${miniTabsOpen === true && ('rotate-180 transition-all')} transition-all`} /> */}
+                                            </div>
+                                        </li>
+
+
+                                        <li className={`w-auto whitespace-nowrap ${partsTabs ? `text-[#FF3E5B] ${theme === 'dark' ? 'bg-[#0B0B0C]' : 'bg-white'}` : `${theme === 'dark' ? 'text-white hover:bg-[#0B0B0C]' : 'text-[#342C2C] hover:bg-[#F2F2F2]'}`} text-left pl-[30px] pr-[10px] rounded py-[5px] text-[12px]`}>
+                                            <div className='w-full flex justify-between items-center'>
+                                                <span>List</span>
+                                                {/* <BsChevronDown size={18} className={`${theme === 'dark' ? 'text-white' : 'text-black'} ${miniTabsOpen === true && ('rotate-180 transition-all')} transition-all`} /> */}
+                                            </div>
+                                        </li>
                                     </ul>
                                 </>
                             )
