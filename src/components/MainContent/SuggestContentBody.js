@@ -52,45 +52,45 @@ function SuggestContentBody({ theme }) {
         }
     ]
 
-    const tableContents = [
-        {
-            id: 1,
-            customerName: 'Ashish Y',
-            partName: 'Brake Pad Kit',
-            partNumber: '0603BAB0080KT',
-            qty: 1,
-        },
-        {
-            id: 2,
-            customerName: 'Rahul Patel',
-            partName: 'Brake Pad Kit',
-            partNumber: '0603BAB0090AT',
-            qty: 1,
-        },
-        {
-            id: 3,
-            customerName: 'Kirtan Panchal',
-            partName: 'Brake Pad Kit',
-            partNumber: '0603BAB0070RT',
-            qty: 1,
-        },
-        {
-            id: 4,
-            customerName: 'Ashish Y',
-            partName: 'Brake Pad Kit',
-            partNumber: '0603BAB0070RT',
-            qty: 1,
-        },
-        {
-            id: 5,
-            customerName: 'Ashish Y',
-            partName: 'Brake Pad Kit',
-            partNumber: '0603BAB0070RT',
-            qty: 1,
-        }
-    ]
+    // const tableContents = [
+    //     {
+    //         id: 1,
+    //         customerName: 'Ashish Y',
+    //         partName: 'Brake Pad Kit',
+    //         partNumber: '0603BAB0080KT',
+    //         qty: 1,
+    //     },
+    //     {
+    //         id: 2,
+    //         customerName: 'Rahul Patel',
+    //         partName: 'Brake Pad Kit',
+    //         partNumber: '0603BAB0090AT',
+    //         qty: 1,
+    //     },
+    //     {
+    //         id: 3,
+    //         customerName: 'Kirtan Panchal',
+    //         partName: 'Brake Pad Kit',
+    //         partNumber: '0603BAB0070RT',
+    //         qty: 1,
+    //     },
+    //     {
+    //         id: 4,
+    //         customerName: 'Ashish Y',
+    //         partName: 'Brake Pad Kit',
+    //         partNumber: '0603BAB0070RT',
+    //         qty: 1,
+    //     },
+    //     {
+    //         id: 5,
+    //         customerName: 'Ashish Y',
+    //         partName: 'Brake Pad Kit',
+    //         partNumber: '0603BAB0070RT',
+    //         qty: 1,
+    //     }
+    // ]
 
-    const [totalQty, setTotalQty] = useState(0);
+    // const [totalQty, setTotalQty] = useState(0);
 
     const [allChecked, setAllChecked] = useState(0);
     const [checked_1, setChecked_1] = useState(false);
